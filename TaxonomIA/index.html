@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>TaxonomIA — DTE · MinCiencia</title>
+<meta name="description" content="TaxonomIA — Horizon scanning y prospectiva tecnológica. División de Tecnologías Emergentes, MinCiencia Chile.">
+<meta property="og:title" content="TaxonomIA — DTE · MinCiencia">
+<meta property="og:description" content="Horizon scanning y prospectiva tecnológica para la toma de decisiones.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#282BA5; --azul2:#3b40d6; --rojo:#D42020; --ink:#080a22;
+    --ok:#28d17c; --muted:rgba(255,255,255,.62); --line:rgba(255,255,255,.12);
+    --font:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    --display:"Space Grotesk","Montserrat",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--font);color:#fff;background:var(--ink);display:grid;place-items:center;
+    padding:24px;overflow:hidden;position:relative;-webkit-font-smoothing:antialiased}
+
+  /* fondo animado */
+  .bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:
+    radial-gradient(1200px 820px at 12% -12%, #1d2294 0%, transparent 60%),
+    radial-gradient(1000px 720px at 102% 112%, #2b1466 0%, transparent 55%),
+    linear-gradient(160deg,#080a22 0%,#11144a 52%,#080a22 100%)}
+  .orb{position:absolute;border-radius:50%;filter:blur(82px);opacity:.55;animation:drift 19s ease-in-out infinite}
+  .orb.a{width:540px;height:540px;background:#3b40d6;top:-170px;left:-130px}
+  .orb.b{width:460px;height:460px;background:#7129d6;bottom:-170px;right:-110px;animation-delay:-7s}
+  .orb.c{width:300px;height:300px;background:var(--rojo);top:38%;left:62%;opacity:.26;animation-delay:-12s}
+  @keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(46px,-34px) scale(1.13)}}
+  .grid{position:fixed;inset:0;z-index:0;background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:50px 50px;
+    -webkit-mask-image:radial-gradient(circle at 50% 42%,#000 0%,transparent 72%);
+    mask-image:radial-gradient(circle at 50% 42%,#000 0%,transparent 72%)}
+
+  .stage{position:relative;z-index:1;width:100%;max-width:600px}
+  .card{background:rgba(255,255,255,.055);backdrop-filter:blur(22px) saturate(140%);
+    -webkit-backdrop-filter:blur(22px) saturate(140%);border:1px solid var(--line);
+    border-radius:26px;padding:46px 46px 34px;text-align:center;
+    box-shadow:0 30px 90px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.08);
+    animation:rise .85s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(26px) scale(.98)}to{opacity:1;transform:none}}
+
+  .brand{display:flex;align-items:center;justify-content:center;gap:9px;font-size:11px;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:24px;line-height:1.5}
+  .brand b{flex:none;width:7px;height:7px;border-radius:50%;background:var(--rojo);box-shadow:0 0 12px var(--rojo)}
+
+  .pill{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;
+    padding:7px 15px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);
+    color:var(--muted);margin-bottom:24px}
+  .pill .d{width:8px;height:8px;border-radius:50%;background:#f5b301;animation:blink 1.2s infinite}
+  .pill.on{color:#cfeede;border-color:rgba(40,209,124,.32)}
+  .pill.on .d{background:var(--ok);animation:pulse 1.7s infinite}
+  .pill.off{color:#f3b4b4;border-color:rgba(212,32,32,.32)}
+  .pill.off .d{background:var(--rojo);animation:none}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(40,209,124,.55)}70%{box-shadow:0 0 0 11px rgba(40,209,124,0)}100%{box-shadow:0 0 0 0 rgba(40,209,124,0)}}
+
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(48px,11vw,90px);line-height:.94;
+    letter-spacing:-.035em;margin:2px 0 16px}
+  h1 .ia{background:linear-gradient(118deg,#7a7fff 0%,#a98bff 42%,#ff5b5b 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    text-shadow:0 0 42px rgba(120,110,255,.45)}
+  .tag{font-size:clamp(15px,2.4vw,18px);color:var(--muted);font-weight:500;
+    max-width:430px;margin:0 auto 22px;line-height:1.55}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:32px}
+  .chips span{font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--muted);
+    padding:6px 13px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+
+  .cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+    padding:17px 22px;border-radius:15px;border:0;font-family:var(--font);font-size:16.5px;
+    font-weight:800;letter-spacing:.01em;cursor:pointer;text-decoration:none;color:#fff;
+    background:linear-gradient(118deg,var(--azul),var(--azul2));
+    box-shadow:0 14px 36px rgba(59,64,214,.45);transition:transform .16s,box-shadow .16s,filter .16s}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 22px 48px rgba(59,64,214,.62);filter:brightness(1.07)}
+  .cta.live{animation:glow 2.6s ease-in-out infinite}
+  @keyframes glow{0%,100%{box-shadow:0 14px 36px rgba(59,64,214,.45)}50%{box-shadow:0 16px 56px rgba(122,127,255,.8)}}
+  .cta[aria-disabled="true"]{background:rgba(255,255,255,.07);color:var(--muted);
+    box-shadow:none;cursor:progress;pointer-events:none;animation:none}
+  .cta .arrow{transition:transform .2s}
+  .cta:hover .arrow{transform:translateX(5px)}
+
+  .hint{min-height:18px;margin-top:14px;font-size:13px;color:var(--muted);line-height:1.5}
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:30px;
+    padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);text-align:left}
+  .foot a{color:#9aa0ff;text-decoration:none;font-weight:600;white-space:nowrap}
+  .foot a:hover{color:#fff}
+  @media(max-width:480px){.card{padding:34px 24px 26px}.foot{flex-direction:column;gap:10px;text-align:center}}
+</style>
+</head>
+<body>
+  <div class="bg"><span class="orb a"></span><span class="orb b"></span><span class="orb c"></span></div>
+  <div class="grid"></div>
+
+  <main class="stage">
+    <section class="card">
+      <div class="brand"><b></b> DTE · Min. de Ciencia, Tecnología, Conocimiento e Innovación</div>
+
+      <div class="pill" id="pill"><span class="d"></span><span id="statustext">Conectando…</span></div>
+
+      <h1>Taxonom<span class="ia">IA</span></h1>
+      <p class="tag">Horizon scanning y prospectiva tecnológica para la toma de decisiones.</p>
+
+      <div class="chips">
+        <span>Clasificación taxonómica</span><span>Evidencia científica</span>
+        <span>Madurez · TRL</span><span>Prospectiva</span>
+      </div>
+
+      <a class="cta" id="openbtn" aria-disabled="true" href="#">
+        <span id="ctatext">Buscando el servidor…</span><span class="arrow">→</span>
+      </a>
+      <p class="hint" id="hint"></p>
+
+      <div class="foot">
+        <span>División de Tecnologías Emergentes</span>
+        <a href="https://dashboard-mapa.onrender.com/" target="_blank" rel="noopener">Mapa territorial →</a>
+      </div>
+    </section>
+  </main>
+
+<script>
+  // url.json lo actualiza el server (publish_url.py) en cada arranque del tunel.
+  // Aqui solo lo leemos, mostramos estado y redirigimos al tunel vigente.
+  var POINTER = "url.json", AUTOREDIRECT_MS = 5000;
+  var state = "", timer = null, cd = null;
+  var pill = document.getElementById("pill"), stx = document.getElementById("statustext"),
+      btn  = document.getElementById("openbtn"), ctx = document.getElementById("ctatext"),
+      hint = document.getElementById("hint");
+
+  function online(url){
+    if (state === "on") return;                 // ya online: no reiniciar countdown
+    state = "on";
+    pill.className = "pill on"; stx.textContent = "Servidor en línea";
+    btn.href = url; btn.setAttribute("aria-disabled", "false"); btn.classList.add("live");
+    ctx.textContent = "Entrar a la plataforma";
+    var s = Math.round(AUTOREDIRECT_MS / 1000);
+    hint.textContent = "Abriendo automáticamente en " + s + " s…";
+    cd = setInterval(function(){
+      s--; hint.textContent = s > 0 ? ("Abriendo automáticamente en " + s + " s…") : "Abriendo…";
+      if (s <= 0) clearInterval(cd);
+    }, 1000);
+    if (AUTOREDIRECT_MS > 0) timer = setTimeout(function(){ window.location.href = url; }, AUTOREDIRECT_MS);
+  }
+  function offline(){
+    if (timer){ clearTimeout(timer); timer = null; }
+    if (cd){ clearInterval(cd); cd = null; }
+    state = "off";
+    pill.className = "pill off"; stx.textContent = "Servidor apagado";
+    btn.setAttribute("aria-disabled", "true"); btn.classList.remove("live"); btn.href = "#";
+    ctx.textContent = "Servidor apagado";
+    hint.textContent = "La aplicación se ejecuta desde la oficina. Cuando se encienda, esta página la abrirá sola.";
+  }
+  function check(){
+    fetch(POINTER + "?cb=" + Date.now(), { cache: "no-store" })
+      .then(function(r){ if (!r.ok) throw 0; return r.json(); })
+      .then(function(d){ var u = (d && d.url ? String(d.url) : "").trim(); u ? online(u) : offline(); })
+      .catch(offline);
+  }
+  check();
+  setInterval(check, 15000);   // reintenta por si encienden el server
+</script>
+</body>
+</html>
