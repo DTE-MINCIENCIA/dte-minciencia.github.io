@@ -1,0 +1,88 @@
+{
+  "updated": "2026-06-02T12:15:00+00:00",
+  "reports": [
+    {
+      "id": "commodities",
+      "title": "Commodities estratégicos",
+      "subtitle": "Variación de mercado de insumos críticos para tecnologías emergentes",
+      "period": "Semana del 26 de mayo al 1 de junio de 2026",
+      "status": "event",
+      "interpretation": "El cobre sube 11,4% en la semana y cruza el umbral de alerta, arrastrado por la demanda de cableado para centros de datos y electromovilidad; el resto de los insumos se mueve dentro de rango. La señal confirma la tendencia alcista observada en las dos lecturas previas y refuerza la pertinencia de vigilar la cadena de refinación nacional.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Precios y variación semanal",
+          "columns": ["Insumo", "Valor", "Δ semanal", "Estado"],
+          "rows": [
+            ["Cobre (LME)", "6,61 USD/lb", "+11,4%", "Sobre umbral"],
+            ["Litio (carbonato)", "13,90 USD/kg", "+2,1%", "En rango"],
+            ["Tierras raras (ETF proxy)", "98,57 USD", "+3,8%", "En rango"],
+            ["Gas natural (Henry Hub)", "3,42 USD/MMBtu", "-1,2%", "En rango"],
+            ["Tipo de cambio", "888,36 CLP/USD", "+0,4%", "En rango"]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Señales asociadas",
+          "items": [
+            "IRENA y OCDE reiteran la presión de demanda por cobre en infraestructura de energía limpia.",
+            "El USGS mantiene a las tierras raras entre los minerales críticos con riesgo de suministro.",
+            "La actividad chilena en procesamiento de tierras raras desde relaves e arcillas iónicas sigue en madurez incipiente."
+          ]
+        }
+      ],
+      "updated": "2026-06-02T08:15:00+00:00"
+    },
+    {
+      "id": "barrido",
+      "title": "Barrido semanal de evidencia",
+      "subtitle": "Nuevos papers, patentes e instrumentos de fomento sobre los temas en seguimiento",
+      "period": "Semana del 26 de mayo al 1 de junio de 2026",
+      "status": "ok",
+      "interpretation": "Aumenta la producción en materiales magnéticos y procesamiento de señales aplicado a sensado remoto; aparece un instrumento CORFO atingente a economía circular de minerales. La continuidad respecto de la semana anterior es estable, sin quiebres de tendencia.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Volumen capturado por fuente",
+          "columns": ["Fuente", "Nuevos registros", "Atingentes"],
+          "rows": [
+            ["arXiv / repositorios de preprints", "1.284", "37"],
+            ["Patentes (Lens / EPO OPS)", "412", "9"],
+            ["CORFO / ANID (fomento)", "23", "3"]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Temas con mayor movimiento",
+          "items": [
+            "Materiales magnéticos y orbitales 6f para imanes permanentes sin tierras raras pesadas.",
+            "Procesamiento de señales para monitoreo geofísico de relaves.",
+            "Hidrometalurgia de bajo impacto para recuperación de cobre."
+          ]
+        }
+      ],
+      "updated": "2026-06-02T08:15:00+00:00"
+    },
+    {
+      "id": "saturacion",
+      "title": "Saturación temática",
+      "subtitle": "Temas cuya evidencia acumulada alcanza el umbral para un reporte completo",
+      "period": "Al 1 de junio de 2026",
+      "status": "heartbeat",
+      "interpretation": "Ningún tema en seguimiento alcanzó el umbral de saturación esta semana. El tema \"materiales cuántico-magnéticos\" avanza y se proyecta saturación en las próximas corridas.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Avance hacia saturación",
+          "columns": ["Tema", "Evidencia acumulada", "Umbral"],
+          "rows": [
+            ["Materiales cuántico-magnéticos", "78%", "100%"],
+            ["Economía circular de minerales", "54%", "100%"],
+            ["Sensado remoto de relaves", "41%", "100%"]
+          ]
+        }
+      ],
+      "updated": "2026-06-02T08:15:00+00:00"
+    }
+  ]
+}
