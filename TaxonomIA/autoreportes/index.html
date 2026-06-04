@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>TaxonomIA · Autoreportes - DTE · MinCiencia</title>
+<meta name="description" content="Autoreportes de vigilancia tecnológica - commodities estratégicos, barrido semanal y saturación de evidencia. División de Tecnologías Emergentes, MinCiencia Chile.">
+<meta property="og:title" content="TaxonomIA · Autoreportes - DTE · MinCiencia">
+<meta property="og:description" content="Lecturas automáticas de vigilancia tecnológica para la toma de decisiones.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#282BA5; --azul2:#3b40d6; --rojo:#D42020; --ink:#080a22;
+    --ok:#28d17c; --amber:#f5b301; --muted:rgba(255,255,255,.62);
+    --muted2:rgba(255,255,255,.46); --line:rgba(255,255,255,.12);
+    --panel:rgba(255,255,255,.045); --panel2:rgba(255,255,255,.07);
+    --font:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    --display:"Space Grotesk","Montserrat",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:#fff;background:var(--ink);min-height:100vh;
+    position:relative;-webkit-font-smoothing:antialiased;padding:0 0 60px}
+  /* fondo */
+  .bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:
+    radial-gradient(1200px 820px at 12% -12%, #1d2294 0%, transparent 60%),
+    radial-gradient(1000px 720px at 102% 8%, #2b1466 0%, transparent 55%),
+    linear-gradient(160deg,#080a22 0%,#0d1038 60%,#080a22 100%)}
+  .orb{position:fixed;border-radius:50%;filter:blur(90px);opacity:.4;z-index:0;animation:drift 21s ease-in-out infinite}
+  .orb.a{width:520px;height:520px;background:#3b40d6;top:-180px;left:-140px}
+  .orb.b{width:420px;height:420px;background:#7129d6;top:30%;right:-150px;animation-delay:-8s}
+  .grid{position:fixed;inset:0;z-index:0;background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+    background-size:54px 54px;
+    -webkit-mask-image:radial-gradient(circle at 50% 0%,#000 0%,transparent 70%);
+    mask-image:radial-gradient(circle at 50% 0%,#000 0%,transparent 70%)}
+  @keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-30px) scale(1.12)}}
+
+  .wrap{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:0 22px}
+
+  /* cabecera */
+  header.hero{padding:54px 0 26px;text-align:center;animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .brand{display:flex;align-items:center;justify-content:center;gap:9px;font-size:11px;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:20px}
+  .brand b{flex:none;width:7px;height:7px;border-radius:50%;background:var(--rojo);box-shadow:0 0 12px var(--rojo)}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,7vw,58px);line-height:1;
+    letter-spacing:-.03em;margin-bottom:12px}
+  h1 .ia{background:linear-gradient(118deg,#7a7fff 0%,#a98bff 42%,#ff5b5b 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-size:clamp(14px,2.4vw,17px);color:var(--muted);font-weight:500;max-width:560px;margin:0 auto 8px;line-height:1.55}
+  .updated{font-size:12px;color:var(--muted2);margin-top:14px}
+  .updated .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);
+    margin-right:6px;vertical-align:middle;animation:pulse 1.9s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(40,209,124,.5)}70%{box-shadow:0 0 0 8px rgba(40,209,124,0)}100%{box-shadow:0 0 0 0 rgba(40,209,124,0)}}
+
+  /* nav de saltos */
+  nav.jumps{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+    padding:14px 0;margin-bottom:6px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  nav.jumps a{font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;
+    padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel);transition:.16s}
+  nav.jumps a:hover{color:#fff;border-color:rgba(122,127,255,.5);transform:translateY(-1px)}
+
+  /* tarjeta de reporte */
+  .report{background:var(--panel);backdrop-filter:blur(20px) saturate(140%);
+    -webkit-backdrop-filter:blur(20px) saturate(140%);border:1px solid var(--line);
+    border-radius:22px;padding:30px 30px 26px;margin-bottom:24px;scroll-margin-top:72px;
+    box-shadow:0 24px 70px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.07);
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .rhead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .rtitle{font-family:var(--display);font-weight:700;font-size:clamp(20px,3.2vw,26px);letter-spacing:-.02em;line-height:1.18}
+  .rsubtitle{font-size:13.5px;color:var(--muted);margin-top:4px;font-weight:500}
+  .badge{flex:none;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    padding:6px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+  .badge.event{color:#ffd2a8;border-color:rgba(245,179,1,.4);background:rgba(245,179,1,.08)}
+  .badge.heartbeat{color:#cfeede;border-color:rgba(40,209,124,.32);background:rgba(40,209,124,.07)}
+  .badge.ok{color:#c3c6ff;border-color:rgba(122,127,255,.35);background:rgba(122,127,255,.08)}
+  .rmeta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12px;color:var(--muted2);margin:10px 0 18px}
+
+  .interp{background:rgba(122,127,255,.08);border-left:3px solid #7a7fff;border-radius:10px;
+    padding:15px 17px;margin-bottom:20px}
+  .interp .lbl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#a9adff;margin-bottom:7px}
+  .interp p{font-size:14.5px;line-height:1.62;color:#eef0ff}
+
+  .block{margin-bottom:18px}
+  .block:last-child{margin-bottom:0}
+  .bhead{font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  thead th{text-align:left;font-weight:700;color:#fff;padding:8px 12px;font-size:12px;
+    text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+  tbody td{padding:9px 12px;border-top:1px solid var(--line);color:#eceeffee;vertical-align:top}
+  tbody tr:hover{background:rgba(255,255,255,.025)}
+  tbody td:first-child{font-weight:600;color:#fff}
+  ul.items{list-style:none;display:flex;flex-direction:column;gap:8px}
+  ul.items li{position:relative;padding-left:18px;font-size:14px;line-height:1.55;color:#eceeffe6}
+  ul.items li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;
+    background:linear-gradient(118deg,#7a7fff,#ff5b5b)}
+  .btext{font-size:14.5px;line-height:1.65;color:#eceeffe6;white-space:pre-line}
+
+  .empty{text-align:center;color:var(--muted2);padding:30px 10px;font-size:14px}
+  .empty .ico{font-size:30px;opacity:.5;margin-bottom:8px}
+
+  footer{text-align:center;margin-top:34px;padding-top:22px;border-top:1px solid var(--line);
+    font-size:12px;color:var(--muted2);line-height:1.7}
+  footer a{color:#9aa0ff;text-decoration:none;font-weight:600}
+  footer a:hover{color:#fff}
+
+  .loading{text-align:center;color:var(--muted);padding:60px 0;font-size:15px}
+  @media(max-width:560px){.report{padding:22px 18px}.wrap{padding:0 14px}}
+</style>
+</head>
+<body>
+  <div class="bg"></div><span class="orb a"></span><span class="orb b"></span><div class="grid"></div>
+
+  <div class="wrap">
+    <header class="hero">
+      <div class="brand"><b></b> DTE · Min. de Ciencia, Tecnología, Conocimiento e Innovación</div>
+      <h1>Autoreportes <span class="ia">TaxonomIA</span></h1>
+      <p class="sub">Lecturas automáticas de vigilancia tecnológica: mercado de commodities estratégicos, barrido semanal de evidencia y saturación temática.</p>
+      <div class="updated" id="updated"></div>
+    </header>
+
+    <nav class="jumps" id="jumps" hidden></nav>
+    <main id="reports"><div class="loading" id="loading">Cargando autoreportes…</div></main>
+
+    <footer>
+      <div>División de Tecnologías Emergentes · Morandé 226, Piso 8 · Santiago de Chile</div>
+      <div style="margin-top:6px">TaxonomIA - Horizon scanning y prospectiva tecnológica · <a href="../">Plataforma →</a></div>
+    </footer>
+  </div>
+
+<script>
+  // ── Contrato de datos (autoreportes.json) ──────────────────────────────
+  // { "updated": ISO8601,
+  //   "reports": [
+  //     { "id":"commodities"|"barrido"|"saturacion",
+  //       "title": str, "subtitle": str, "period": str, "updated": ISO8601,
+  //       "status": "event"|"heartbeat"|"ok", "interpretation": str,
+  //       "blocks": [
+  //         {"type":"table","heading":str,"columns":[str],"rows":[[str,...],...]},
+  //         {"type":"list","heading":str,"items":[str,...]},
+  //         {"type":"text","heading":str,"body":str}
+  //       ] } ] }
+  // El backend lo publica vía Contents API (modules/m6_reports/autoreport_landing.py).
+  var SOURCE = "autoreportes.json", REFRESH_MS = 60000;
+  var STATUS_LABEL = { event:"Novedad", heartbeat:"Sin novedades", ok:"Actualizado" };
+  var DEFAULT_TITLES = {
+    commodities:"Commodities estratégicos",
+    barrido:"Barrido semanal de evidencia",
+    saturacion:"Saturación temática"
+  };
+
+  var $reports = document.getElementById("reports"),
+      $jumps   = document.getElementById("jumps"),
+      $updated = document.getElementById("updated"),
+      $loading = document.getElementById("loading");
+
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e; }
+  function fmtDate(iso){
+    if(!iso) return "";
+    var d=new Date(iso); if(isNaN(d)) return "";
+    try{ return d.toLocaleString("es-CL",{day:"2-digit",month:"long",year:"numeric",hour:"2-digit",minute:"2-digit"}); }
+    catch(e){ return d.toISOString().slice(0,16).replace("T"," "); }
+  }
+
+  function renderBlock(b){
+    var wrap = el("div","block");
+    if(b.heading) wrap.appendChild(el("div","bhead", b.heading));
+    if(b.type === "table" && Array.isArray(b.rows)){
+      var t = el("table"), thead = el("thead"), trh = el("tr");
+      (b.columns||[]).forEach(function(c){ trh.appendChild(el("th",null,c)); });
+      thead.appendChild(trh); t.appendChild(thead);
+      var tb = el("tbody");
+      b.rows.forEach(function(row){
+        var tr = el("tr");
+        (row||[]).forEach(function(cell){ tr.appendChild(el("td",null,String(cell))); });
+        tb.appendChild(tr);
+      });
+      t.appendChild(tb); wrap.appendChild(t);
+    } else if(b.type === "list" && Array.isArray(b.items)){
+      var ul = el("ul","items");
+      b.items.forEach(function(it){ ul.appendChild(el("li",null,it)); });
+      wrap.appendChild(ul);
+    } else if(b.type === "text"){
+      wrap.appendChild(el("p","btext", b.body||""));
+    }
+    return wrap;
+  }
+
+  function renderReport(r){
+    var sec = el("section","report"); sec.id = "r-" + (r.id||"");
+    var head = el("div","rhead");
+    var titleBox = el("div");
+    titleBox.appendChild(el("div","rtitle", r.title || DEFAULT_TITLES[r.id] || "Autoreporte"));
+    if(r.subtitle) titleBox.appendChild(el("div","rsubtitle", r.subtitle));
+    head.appendChild(titleBox);
+    var st = (r.status||"ok").toLowerCase();
+    head.appendChild(el("span","badge "+(STATUS_LABEL[st]?st:"ok"), STATUS_LABEL[st]||STATUS_LABEL.ok));
+    sec.appendChild(head);
+
+    var meta = el("div","rmeta");
+    if(r.period) meta.appendChild(el("span",null,"Período: "+r.period));
+    if(r.updated) meta.appendChild(el("span",null,"Generado: "+fmtDate(r.updated)));
+    if(meta.childNodes.length) sec.appendChild(meta);
+
+    if(r.interpretation && String(r.interpretation).trim()){
+      var ib = el("div","interp");
+      ib.appendChild(el("div","lbl","Lectura interpretativa"));
+      ib.appendChild(el("p",null, r.interpretation));
+      sec.appendChild(ib);
+    }
+    (r.blocks||[]).forEach(function(b){ sec.appendChild(renderBlock(b)); });
+    if(!(r.blocks||[]).length && !(r.interpretation||"").trim()){
+      var em = el("div","empty"); em.appendChild(el("div","ico","◷"));
+      em.appendChild(el("div",null,"Aún sin datos para este autoreporte. Se publicará en la próxima corrida."));
+      sec.appendChild(em);
+    }
+    return sec;
+  }
+
+  function render(doc){
+    var reports = (doc && Array.isArray(doc.reports)) ? doc.reports : [];
+    $reports.innerHTML = ""; $jumps.innerHTML = "";
+    if(!reports.length){
+      $reports.appendChild((function(){var e=el("div","empty");e.appendChild(el("div","ico","◷"));
+        e.appendChild(el("div",null,"Todavía no hay autoreportes publicados."));return e;})());
+      $jumps.hidden = true;
+    } else {
+      reports.forEach(function(r){
+        var a = el("a",null, r.title || DEFAULT_TITLES[r.id] || "Autoreporte");
+        a.href = "#r-" + (r.id||""); $jumps.appendChild(a);
+        $reports.appendChild(renderReport(r));
+      });
+      $jumps.hidden = false;
+    }
+    $updated.innerHTML = "";
+    if(doc && doc.updated){
+      var dot = el("span","dot");
+      $updated.appendChild(dot);
+      $updated.appendChild(document.createTextNode("Última actualización: " + fmtDate(doc.updated)));
+    }
+  }
+
+  function load(){
+    fetch(SOURCE + "?cb=" + Date.now(), { cache:"no-store" })
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(render)
+      .catch(function(){
+        if($loading) $loading.textContent = "No se pudo cargar el contenido. Reintentando…";
+      });
+  }
+  load();
+  setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>
