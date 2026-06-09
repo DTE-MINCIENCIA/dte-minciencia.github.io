@@ -1,37 +1,72 @@
 {
-  "updated": "2026-06-02T12:15:00+00:00",
+  "updated": "2026-06-09T13:04:36.735416+00:00",
   "reports": [
     {
       "id": "commodities",
       "title": "Commodities estratégicos",
       "subtitle": "Variación de mercado de insumos críticos para tecnologías emergentes",
-      "period": "Semana del 26 de mayo al 1 de junio de 2026",
-      "status": "event",
-      "interpretation": "El cobre sube 11,4% en la semana y cruza el umbral de alerta, arrastrado por la demanda de cableado para centros de datos y electromovilidad; el resto de los insumos se mueve dentro de rango. La señal confirma la tendencia alcista observada en las dos lecturas previas y refuerza la pertinencia de vigilar la cadena de refinación nacional.",
+      "period": "Verificado: 09-06-2026 09:04 · snapshot: 2026-06-04T13:08:55Z",
+      "status": "heartbeat",
+      "interpretation": "Tras tres corridas de estabilidad absoluta, el nuevo snapshot del 4 de junio de 2026 quiebra la tendencia con un alza del cobre a 6,52 USD/lb y una caída significativa del Brent a 98,29 USD/barril, mientras el tipo de cambio se mantiene prácticamente sin variación. Esta combinación mejora los márgenes de la minería chilena al reducir costos energéticos y aumentar el ingreso por exportación, pero la persistencia del IPC mensual en 1,30% y el leve incremento de tierras raras a 98,57 USD advierten que las presiones inflacionarias internas y de insumos críticos no ceden. Se recomienda actualizar las proyecciones de inversión minera aprovechando el mayor precio del cobre y la baja del petróleo, sin descartar ajustes por la UF y UTM al alza.",
       "blocks": [
         {
           "type": "table",
-          "heading": "Precios y variación semanal",
-          "columns": ["Insumo", "Valor", "Δ semanal", "Estado"],
+          "heading": "Precios y variación desde el último reporte",
+          "columns": [
+            "Insumo",
+            "Valor",
+            "Δ"
+          ],
           "rows": [
-            ["Cobre (LME)", "6,61 USD/lb", "+11,4%", "Sobre umbral"],
-            ["Litio (carbonato)", "13,90 USD/kg", "+2,1%", "En rango"],
-            ["Tierras raras (ETF proxy)", "98,57 USD", "+3,8%", "En rango"],
-            ["Gas natural (Henry Hub)", "3,42 USD/MMBtu", "-1,2%", "En rango"],
-            ["Tipo de cambio", "888,36 CLP/USD", "+0,4%", "En rango"]
-          ]
-        },
-        {
-          "type": "list",
-          "heading": "Señales asociadas",
-          "items": [
-            "IRENA y OCDE reiteran la presión de demanda por cobre en infraestructura de energía limpia.",
-            "El USGS mantiene a las tierras raras entre los minerales críticos con riesgo de suministro.",
-            "La actividad chilena en procesamiento de tierras raras desde relaves e arcillas iónicas sigue en madurez incipiente."
+            [
+              "Cobre",
+              "6.52 USD/lb",
+              "—"
+            ],
+            [
+              "Tipo de cambio nominal (dólar observado $CLP/USD)\\ tipo de cambio \\ precio \\ diario \\ BCCh",
+              "894.29 CLP/USD",
+              "—"
+            ],
+            [
+              "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)",
+              "3.07 USD/MMBtu",
+              "—"
+            ],
+            [
+              "IPC General, 2023 = 100, Variación Mensual",
+              "1.30 %",
+              "—"
+            ],
+            [
+              "Europe Brent Spot Price FOB (Dollars per Barrel)",
+              "98.29 USD/bbl",
+              "—"
+            ],
+            [
+              "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)",
+              "95.96 USD/bbl",
+              "—"
+            ],
+            [
+              "Tierras raras",
+              "98.57 USD",
+              "—"
+            ],
+            [
+              "Unidad de fomento (UF)",
+              "40,678.43 CLP",
+              "—"
+            ],
+            [
+              "Unidad tributaria mensual (UTM)",
+              "71,506.00 CLP",
+              "—"
+            ]
           ]
         }
       ],
-      "updated": "2026-06-02T08:15:00+00:00"
+      "updated": "2026-06-09T13:04:36.223380+00:00"
     },
     {
       "id": "barrido",
@@ -44,11 +79,27 @@
         {
           "type": "table",
           "heading": "Volumen capturado por fuente",
-          "columns": ["Fuente", "Nuevos registros", "Atingentes"],
+          "columns": [
+            "Fuente",
+            "Nuevos registros",
+            "Atingentes"
+          ],
           "rows": [
-            ["arXiv / repositorios de preprints", "1.284", "37"],
-            ["Patentes (Lens / EPO OPS)", "412", "9"],
-            ["CORFO / ANID (fomento)", "23", "3"]
+            [
+              "arXiv / repositorios de preprints",
+              "1.284",
+              "37"
+            ],
+            [
+              "Patentes (Lens / EPO OPS)",
+              "412",
+              "9"
+            ],
+            [
+              "CORFO / ANID (fomento)",
+              "23",
+              "3"
+            ]
           ]
         },
         {
@@ -74,11 +125,27 @@
         {
           "type": "table",
           "heading": "Avance hacia saturación",
-          "columns": ["Tema", "Evidencia acumulada", "Umbral"],
+          "columns": [
+            "Tema",
+            "Evidencia acumulada",
+            "Umbral"
+          ],
           "rows": [
-            ["Materiales cuántico-magnéticos", "78%", "100%"],
-            ["Economía circular de minerales", "54%", "100%"],
-            ["Sensado remoto de relaves", "41%", "100%"]
+            [
+              "Materiales cuántico-magnéticos",
+              "78%",
+              "100%"
+            ],
+            [
+              "Economía circular de minerales",
+              "54%",
+              "100%"
+            ],
+            [
+              "Sensado remoto de relaves",
+              "41%",
+              "100%"
+            ]
           ]
         }
       ],
