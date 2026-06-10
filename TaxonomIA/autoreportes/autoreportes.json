@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10T23:15:47.663414+00:00",
+  "updated": "2026-06-10T23:15:50.984220+00:00",
   "reports": [
     {
       "id": "commodities",
@@ -7,7 +7,7 @@
       "subtitle": "Variación de mercado de insumos críticos para tecnologías emergentes",
       "period": "Verificado: 10-06-2026 23:15 · snapshot: 2026-06-04T13:08:55Z",
       "status": "heartbeat",
-      "interpretation": "Tras tres semanas de estabilidad absoluta en todos los indicadores, el nuevo snapshot del 4 de junio de 2026 rompe la tendencia al registrar un alza del cobre a 6,52 USD/lb y una significativa caída del Brent a 98,29 USD/barril, mientras el tipo de cambio se mantiene prácticamente sin variación. Esta combinación —mayor ingreso por cobre y menor costo energético— alivia parcialmente la presión sobre los márgenes mineros, aunque el IPC mensual continúa en 1,30% y las tierras raras suben levemente a 98,57 USD. Se recomienda actualizar las proyecciones de inversión minera incorporando el nuevo precio del cobre y el alivio en costos de transporte, sin descartar que la persistente inflación interna pueda compensar estas ganancias.",
+      "interpretation": "El nuevo snapshot replica exactamente los valores del estado previo, confirmando la estabilidad de todos los indicadores estratégicos monitoreados tras el quiebre de tendencia registrado el 4 de junio de 2026. Se mantiene el precio del cobre en 6,52 USD/lb, el Brent en 98,29 USD/barril y el tipo de cambio en 894,29 CLP/USD, sin variaciones que alteren el escenario de costos energéticos reducidos y presiones inflacionarias internas persistentes. Esta continuidad sugiere que la mejora en los márgenes mineros y la reducción en costos de transporte se consolidan como línea base, sin cambios inmediatos que modifiquen las proyecciones de inversión. Se recomienda mantener las actualizaciones de planificación estratégica basadas en estos valores, a la espera de una próxima corrida que pueda indicar un nuevo quiebre en la tendencia.",
       "blocks": [
         {
           "type": "table",
@@ -66,7 +66,7 @@
           ]
         }
       ],
-      "updated": "2026-06-10T23:15:47.292991+00:00"
+      "updated": "2026-06-10T23:15:49.824800+00:00"
     },
     {
       "id": "barrido",
