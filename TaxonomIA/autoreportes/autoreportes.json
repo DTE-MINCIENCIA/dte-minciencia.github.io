@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-09T13:04:36.735416+00:00",
+  "updated": "2026-06-10T12:30:46.824845+00:00",
   "reports": [
     {
       "id": "commodities",
       "title": "Commodities estratégicos",
       "subtitle": "Variación de mercado de insumos críticos para tecnologías emergentes",
-      "period": "Verificado: 09-06-2026 09:04 · snapshot: 2026-06-04T13:08:55Z",
-      "status": "heartbeat",
-      "interpretation": "Tras tres corridas de estabilidad absoluta, el nuevo snapshot del 4 de junio de 2026 quiebra la tendencia con un alza del cobre a 6,52 USD/lb y una caída significativa del Brent a 98,29 USD/barril, mientras el tipo de cambio se mantiene prácticamente sin variación. Esta combinación mejora los márgenes de la minería chilena al reducir costos energéticos y aumentar el ingreso por exportación, pero la persistencia del IPC mensual en 1,30% y el leve incremento de tierras raras a 98,57 USD advierten que las presiones inflacionarias internas y de insumos críticos no ceden. Se recomienda actualizar las proyecciones de inversión minera aprovechando el mayor precio del cobre y la baja del petróleo, sin descartar ajustes por la UF y UTM al alza.",
+      "period": "Verificado: 10-06-2026 08:30 · snapshot: 2026-06-09T13:04:56Z",
+      "status": "event",
+      "interpretation": "El nuevo snapshot del 9 de junio de 2026 quiebra la tendencia de mejora en los márgenes mineros observada la semana anterior, al registrar una baja del cobre a 6,43 USD/lb y un fuerte aumento del tipo de cambio a 918,91 CLP/USD, mientras el Brent se mantiene estable en 98,29 USD/barril. A esto se suma una caída significativa del IPC mensual a 0,20% y de las tierras raras a 87,42 USD, lo que alivia las presiones inflacionarias internas y reduce el costo de algunos insumos críticos, aunque la UF sube a 40.763,26 CLP. Se recomienda reevaluar las proyecciones de inversión minera considerando el menor precio del cobre y el tipo de cambio más alto, que podrían comprimir los márgenes, pero aprovechando la baja del IPC y de tierras raras para ajustar costos operativos.",
       "blocks": [
         {
           "type": "table",
@@ -20,53 +20,61 @@
           "rows": [
             [
               "Cobre",
-              "6.52 USD/lb",
-              "—"
+              "6.43 USD/lb",
+              "-1.5%"
             ],
             [
               "Tipo de cambio nominal (dólar observado $CLP/USD)\\ tipo de cambio \\ precio \\ diario \\ BCCh",
-              "894.29 CLP/USD",
-              "—"
+              "918.91 CLP/USD",
+              "+2.8%"
             ],
             [
               "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)",
               "3.07 USD/MMBtu",
-              "—"
+              "+0.0%"
             ],
             [
               "IPC General, 2023 = 100, Variación Mensual",
-              "1.30 %",
-              "—"
+              "0.20 %",
+              "-84.6%"
             ],
             [
               "Europe Brent Spot Price FOB (Dollars per Barrel)",
               "98.29 USD/bbl",
-              "—"
+              "+0.0%"
             ],
             [
               "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)",
               "95.96 USD/bbl",
-              "—"
+              "+0.0%"
             ],
             [
               "Tierras raras",
-              "98.57 USD",
-              "—"
+              "87.42 USD",
+              "-11.3%"
             ],
             [
               "Unidad de fomento (UF)",
-              "40,678.43 CLP",
-              "—"
+              "40,763.26 CLP",
+              "+0.2%"
             ],
             [
               "Unidad tributaria mensual (UTM)",
               "71,506.00 CLP",
-              "—"
+              "+0.0%"
             ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Movimientos ≥ 10%",
+          "items": [
+            "IPC General, 2023 = 100, Variación Mensual: 1.30 → 0.20 % (-84.6%)",
+            "Tierras raras: 98.57 → 87.42 USD (-11.3%)"
           ]
         }
       ],
-      "updated": "2026-06-09T13:04:36.223380+00:00"
+      "updated": "2026-06-10T12:30:46.237321+00:00"
     },
     {
       "id": "barrido",
