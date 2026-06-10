@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10T23:15:45.247002+00:00",
+  "updated": "2026-06-10T23:15:47.663414+00:00",
   "reports": [
     {
       "id": "commodities",
@@ -7,7 +7,7 @@
       "subtitle": "Variación de mercado de insumos críticos para tecnologías emergentes",
       "period": "Verificado: 10-06-2026 23:15 · snapshot: 2026-06-04T13:08:55Z",
       "status": "heartbeat",
-      "interpretation": "Tras tres corridas consecutivas de estabilidad, el nuevo snapshot del 4 de junio de 2026 quiebra la tendencia al registrar un alza del cobre a 6,52 USD/lb y una significativa caída del Brent a 98,29 USD/barril, mientras el tipo de cambio se mantiene prácticamente sin variación. Este movimiento confirma la persistencia de presiones inflacionarias internas (IPC en 1,30%) y una mejora en los costos energéticos que podría aliviar parcialmente los márgenes de la industria nacional. Se recomienda actualizar las proyecciones de inversión minera considerando el mayor precio del cobre y la reducción en los costos de transporte, sin descartar ajustes en la planificación de compras estratégicas ante la volatilidad observada.",
+      "interpretation": "Tras tres semanas de estabilidad absoluta en todos los indicadores, el nuevo snapshot del 4 de junio de 2026 rompe la tendencia al registrar un alza del cobre a 6,52 USD/lb y una significativa caída del Brent a 98,29 USD/barril, mientras el tipo de cambio se mantiene prácticamente sin variación. Esta combinación —mayor ingreso por cobre y menor costo energético— alivia parcialmente la presión sobre los márgenes mineros, aunque el IPC mensual continúa en 1,30% y las tierras raras suben levemente a 98,57 USD. Se recomienda actualizar las proyecciones de inversión minera incorporando el nuevo precio del cobre y el alivio en costos de transporte, sin descartar que la persistente inflación interna pueda compensar estas ganancias.",
       "blocks": [
         {
           "type": "table",
@@ -66,7 +66,7 @@
           ]
         }
       ],
-      "updated": "2026-06-10T23:15:45.115849+00:00"
+      "updated": "2026-06-10T23:15:47.292991+00:00"
     },
     {
       "id": "barrido",
