@@ -5,468 +5,91 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#282BA5">
-<title>Acceso</title>
-<meta name="description" content="Acceso a TaxonomIA, plataforma de clasificación taxonómica y prospectiva de tecnologías emergentes. División de Tecnologías Emergentes, Ministerio de Ciencia, Tecnología, Conocimiento e Innovación.">
-<meta property="og:title" content="TaxonomIA - Acceso · DTE · MinCiencia">
-<meta property="og:description" content="Plataforma de clasificación taxonómica y prospectiva de tecnologías emergentes.">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAUjklEQVR4nLVaCZRdRZn+/qq6y1t6S3enOwnZWBKSGEA2RcWAMCgSEIEkbmBkREXGwcFRRjhOG3UYUEcEFCYgZ4zKgImDA4igLCYsIiFAoEnSEMjS6aQ7Se+v33bvrao5f93XnYwDoxnP3HPe6e5769X91+///r+acOgXYVGHxLoVCf8hAHztB3vz/7Fu5wlDBX1KOcLCRNsjrCenGI0skSAABWmiPk/YbdlQbWzM2WeuuHjGC587b1rJju+6ZLXEmqX60IU5lOugl1hr6fAPPnbmcEkuq8TmfbHBbGMyMG5XAqwBjPsLIA8QqaisjrRFeJS8Efr0SFPG/HznI2evTdKlhI4OwooV5v9BgdUSWKqttWLGGfdfMlgUX6gm3vGJVYCNUoGt1cRbChCIyP3OyrqfxsLCOjWskYACpAeFCkIZPduS09/rWbdktVPkELzxZyhg3RoC2Tln3H3a7hF5Qzn2T9ZGg3TVQJAFkbBCkduOl5OBEICJrfOGVAJGW1giCFbBGlbKwBpjYQSELxQssn517exJ0dUv/3b5eosOAXydN7B/gQK8yQrD4TL55B9/a7hM18RagkxVQwgioQRv4SxskvRdUrnQsYMFzJjbiGrVYm93EaIp53RjHwEGitdawPA9a4011oIC6YtS0lyHjv3rP31dGlapDIeuwJIlEmvW6PPPv6X5sTfUXWNJ5v1WVziwLRFJkIJlIZIyYBNQpgGkPJjiKPK5DOZOErj04jkYHrNY88vt6NpfRTU2OEoMYp8JMWwanHcExQ4INAcMWW1NIoTKUENQufdv39XyyRW3Lh1DR4d4q7x4CwVSrd913i1TN75uHy7F/kKYUgwSHssOEoAuu4ykSbNALUeCMvVAfxdM90Z4UuCqS+fhun84l9MCV1z7n7jjnjeggyw6wqfxfrkdXaYNq+M5eCiaBRgJSbHzBtgTRidWhl4+rDxz9sl1i9fcedngW3niTRRIFy7+6MqWxzeOrStV5XyylQSCFEjCmgRkIlDb20BtC4G4ADvwMuzwDkBLCBlCjxUwawbhV3cuR7ES4wMXr8JQIYDMZqF1BW22H2epHlyY6UVOKNxcPgYPVA4HRAJJln3MiscQoZf3o2cvOW3Wmbfeuqn0ZjnxRwpwlC4VG1ZeLU6/+dHHChXvVDKVxIKhRgLJGESmEeKIDwKIYHatgx3cDggf1qsDpO8AyERVzDk8g4F9e+B5HsJcM3bsqkIEWVgTO6+kMVPF6UEPvprrQr9pxBVj78CQyUJJjcRKTnanRENQfbDYde3ixPyckZC9YN9cgSWrJa1ZqpuO+ecfDhX9z1tdjEEM4uQsLZvng2aeDrv7dzB962GpDvDyYM8waNYw0qEQqlWAdFoLhAf4obOPg1ayEJz0MNCak7mEL+c24+NhHy4rnILnkilQIkZiOTtsTCLrTa6PvrVv4zVfs38EsQcUqD048pQbFm/fbx7QcTUhgrIc79EoZPuJoCnvhO36MUxpEDZoTeuwkzqFy/RiYGJc4ntOgNprWMHaWqdnrbBBg6yBTgzeHXTjtrqXcdXYiXi0OgNSamiugJa05wt5eHv+Pa8+eeXvD64TYiJ01myyl156Q92e/vIPdRRZghb8EqoOQbZwvJ8E03kLTGkYCFpBDs95D5P+zpZ2P9nqGpbrlq79ZNyv3YdmINO1wmf429Ak4XkCT0czceHwyfiX3HM42euBNoxShkAJxbGh3fuGb9uwcoPHso4bv6bA1yUn7v0bqleVY28G2UjDQriYz7eDpp8Gs+UO2NiAvKYU850wqQJOidpPDh8yBqTZsmnRSgWuKcsW5+fumXUfMhaJIXhksDVuxSUjx+O2/HNow7AzjODKbatJKfaOOffWhz/l0Ij5GA6UTixe/N3mR7aMvFaNbKMAV0pNZGOIBZ+B3fVr6MFtoKB5wvUTocEC1sJnwixuCVOKmn34prP4BFikN4lcdWaF0rsGPgyiRODj2S58yO/D0pH3QHJVF8JY61HW192fPfeYeTfeuLSSemARWx/2mR2jn4y1aBKItcu0eBg0/X2whW0wA1sg/CZ2J4SwXIQhmZS5WGfB0vDgWGay5tZIm64nDcHuJAs57gEy7rsCGpKj3O3J+wEJCXhK467ykaiC8JHwDRdKElaQqZpq7M28e23XhU7fRR38FZBdvVpkr3nupXIk5wurrdWRoLAeYu5HYV65HdYyEEnYcnyQB2qJ6EuoQLkEtYZgKrU1zuq15J5wmgECD2DkSXT6zK0b9xKAQEEqCWMSzBRD+FHdK1g8cgoi8nkHbeGLbCZ+orz1+tOM7XBcHUec0HH8zoHS89phmiBUhyDmLAGiYZju38F69ZBIMP+oVngeb57yy0Qb9PaNoL9nEMhkoEKFObMmIfSlK6jkECkNDtZFEOH1nQOY1BiiuSkPrY2D39QWqWdf2z6IYjGGUoRYe7gxvwEbTSNWlY6EJxKbQJEnTfz2mdk5z65bsUPxlweK5fcbq0A21rBagXlNdip096MglYHVCTIZg4d/9mlMndKCJI7dy1iBgcEiHlm3GVevuBd7B0fx659+BTOntyGJI7dm/OK1vh/grCXXY/myd+NjF52KqFqB5ADnQLQWnudj0Ye/iyfWbgM15Fx43lk9DB3517GqNN2xMCBOEmS8HcP2dAD/5tIsSfR7LTNIIrJ6DGiYA1vuB1WHASEd6lgbI040jDFOmCQxUEpiSvskXLLsPXjsl3+H9iaBSiVyAmtjEcXafRLN9GA8jhIkDLNOKeuYbFr/0hphbeJyitcLxHglanIIvUANuYxhm/DSarnyXjaP+nTHyuyqH3fN46pNxIiUgOpmAyNbYQUTgwPIwcWGSOCee5/EDdffg1xTHZZddCq+cNk5mD93Oq790ofwwQu+gXx9DkfNmYK7brsSnh/gm9/5d6y5+3fItLag65Vd+Owl73P7btqyE8s/fzMoyDhF+G3bd1dA2QDGaJfo2nh4PmnC6f4ANhVbGByEthqRNguNtaTWPbJ3ugHaHYYzWRcBEDbC9vWkrSAn3kE1m2N2/2ARXZ37geYYzz9xB6a2N+OjFy7C4rNOwFVf/wWiLbsQMZdhmBOE7bsGsemlXqDFAMUEir0KoFyJsfnVfUCYS0sS9woqA1J+WhMd1Bqsj+vwsbCP/ZpKYmL23owPX/KDSaJQLhxmrA3Sli8m8uudU21l0CHPAUQ5oIRSHkS+EbmmyZC5Ztz/8PNO0NaWOsw5cipEmEMul5+gDWGYhci3IFs/CaQCpH0+cMyCmXjjxZvx2tPXYdcL38VN/7QMVCpDuuccXnwZvBaHaKQIRBGSGgOwxjS+um1vu9KRbnGRyKXRJGSZnCVVwFRgRXai0k7UnxpiGJ0SMSM9lKspt5JSQnHK6DSGxzVOmYYFu35cLL6y2QCNjfUTf8+Y1ghm0eOGGl+73/rc66CeIoxYjzi5LcirxHqSMonIpGGSasYWgolSbuOod63cHxRGbG2GOc8XqFQjzJze4u4XixUMjJTgSud46B1cfCcSNX326tYeXPuNn7BLIZWPnj6mLhmYJK6RQhcviA3zJUIdJRhxe7B5FFWqNsMNbG3TtKpykqZvMyCHUeMMkvlMapFSuYKkMIRCD1DfFuKvP7bIbdn1+m7s7u4HfK/GPA+Snil2LSTGn+3dN4wHVj8GIF+zThZoaXYDi/R9wk1jmBEzJimXp2zYdE9FxirpyyJKzB5SlzsXTpDUWvw7Z6ZKJkmCd7z9SHzxyxegvqkO559zPI5722xXVb+/8mGYigb8tDJzoeLPAWXGPZA+m37YZHz5Hz8LoZRzuFIKv3qkE52v7IHIhGl1d8ozFQGYI6cGl67+eQGVVSDQz+QtYRUZyJKim9dYblI4pMZVI6B5Ur17yRmLjnWfgy38ze/cgzVrnoFqakUyWnIFKpvjHAJ8P60lLiQtUF+Xdc/nHjUd315x8X+LtLGxIjrXb4PMZpC4URIQIIawGqOuwXEWIJgkUkL0q3zO76bBQhmgDDEDi0aIw4hUmI5H2I08NdEW9z20Hq3NDahG3Bam9GBP3wB+cf8f8MTaLqiGZgdmbIqhkSLue/AZ+L6HbTv3pWHFFMSTeOKZLYhjjXKlWrNymuSB72Pz1l5Q4DnLOzS0wGRRdYRuzChHCtkHAnbg2IUNvXTTF24K/v6+zZtiLY+A1YZ0SYijl8P0PAYUdsPKEKhGaXtYGU0RyoUyz4AobVCED9HSCsNTF445j/vnClDi9TGQzQGZOnCP5KKT7xdHAR4rHUQ3XN/N67yMYwCCBIyVOCPowwXBPlwxsoC/ohMKZcaLnol23vou9cVbrqxmZ3+u0ylAPGKKgEo/RN1smJEdIBlg/tumoFCoYF+/RDZUjgrkQoXB0Sp0otHeVo/dewo4eu4UlCsRuruHEOSySDyJxgbPFaxSMUZ9QxalcgybzWHuwhno3T+KYomta6GUQBynhC4MBYqlBNJxJIl3+AW8rPM1GHdM0iqlNlQsoPieJ+hxInu+m47xhGH4VVD7qbC71sJXFicf04rGuhwKY2Vkw8A1Kgyjo4UyOrt246JzTsDLW3bjxU3duPjDx2FgoITRYhkN9SFyWR9RZFyIcI3IZTN4eUsPWppzCHwPYSjheyGGR4pom9yIoaEiMqFEEHh4YVMfHvzNZpzkFfCV0VluQGw4wElTJiMeLXBRZZ2mtoYPFXcV2dmSZMbxIJp2JkTDDMTFHqz9QzdK5TI8TzmI9xxf1yiWE8cN77j7SZTKBn37C/jJvRtc0pZKFUe9uaqaRGPBvGkYHBrDyEgVoyUOw7RWEO9HhKlTJ+G1HXvx6mt9kL5EfTaDwUKCE3NjqGjC1jgHSdpqLaQnq0PzDp/yxL5OF7AdQtAKE874zGOlWJ1OSAyiYSmmnQ5kp8FsvQsWuRRBXOtXayNdReMpHfO/OP3dU8x2U/jl/HDLahDqEMgRnLTQjU80qLYfAz4PQ9lN6RCVcQV3tHbhgUoD7i9PgyLmw4GqC/WqwvaVyy2WSIFFEJyPDVl1syRLrkp6dTD7fg/KtoPqZkJIDfIDUOCDAgUR+hC+B6FSuiQDD8Lj+XWtP5ayVkm5v5Tph53N5DAMAS9kbAX8APA8IAgBlU1JnRdABR4oyOPE3CjaUMEDlckQQjNPFlIktrkh+OF4ZalBQIewqxdQ5ku/WV/R3vHEDW48IkXrcaD206Bf/j6YI5H0J+ZcDMXpl2tTdWfkCC11PF5M2eZ4AUtnROQ6yerwGHImcs08JvhSWty4YxuDQhmK6xJ+3bgR15UOw1PVVnaa1lAy70cPl3b+6GxuJ3k64XIA2Ey0dIWesfBvrt4zlDySaGPJa4DZvwGy+ViIwy+Aef1uiIYjgaDJmV0wZ2LYYxE4GkBQ1b045e11yOYy0DxWqU3rGNMlEcoa2PnUC5hb3QfLY/jxS7sZCFMDvKbzeDFqw4r6zeg0eTxVaYUS2ibGNfumrTm49o0d/KXNB9MzvpZIQWt0fvZlPx2teJ8gG3EwK7JliOO+AtuzFmbPOiBgxhiBhxcTPNsxSMZ0ySNTQPPciOOaQ6gWRlwvHN0JwKN519SDw61GWTxGN64rHpbmevCpTC8WDy4AzyM0KAH5qj4T3TT6xo++yLEPrKk1BxMXuwQ455yw4fHOHS+WIztTEB88VAT5IcTCq2C3PwCzb70bbi06ZRaKpRJCX6GxIYdSJUYUlZHLZBB40rWdjP/aErZu24uFc9pRriZ4vXsQs6c1wPcVMr6H7j1DmNKaty909lL/KGFxtg/X5Lpx3tDRGLCha3O09WTGj7dc/IHpJ95+++YqsGZiwFtjbXzx7H0zPfjgV4emtfgf8SQix+lVxphqEabz+6BZiyGmnwVb7nPxngm9lDXyuJ0/sIiqVRSKFRdCXPZ5AKB1As3zTx27gTO/nY+oIq3R2hTCCzzqTwQ+kel2wi8bnot+w8Jbow2Rp5LSjNbMsttvX1EC5h80YH3T84FFCliXtM27fFn/qLlHa6NJ8pCuIITyIed9DiYag968CqiOAEFdek5US+a0fxiHWjYAn1DWKAc/H6cOHEKWk5tjKMH3mntwlFfBJ4ePwqDJQAlreNyopBBTJonzd3WuvA8Hhc7/ooALJwWsSNrmXnbpwJi4M0kTUsNUJHQRctZ5EJNPgul9CqbvqZT3qJwbo4/Pf5wejsVaNwetzaed9Rlh4HpmjQ+F+3Flfg+erOTQUZgJxmY+RtFWklJEk+tpee/m21fZmmEP4ZAvVaJ9/uVLBkb0qlgjI4RJrDUK0QAofxjErMVuUu1OaAY6YUp9ACc4JzQnqjsfDtPtxmejpNEsKjg7HMH5mQFULfCdsWnYWG1w40g+pjGQypO22tqglvdu+td73kr4P6HAgXCafdzlJ/UORD+paP9oppwklEVSltAlUN1hoLZ3gvIzHRrZUh9saY87U1C6hLnRDtRTgjYZY44s4WhZwiQR4XUd4OeVFjxbZVgWfGppEjdnViJUZvvUSeribS+tfHpchr/gnDjdYMmSqxt++8Lwt4tl/RnGZCIeEilrkzEewxNP8Cg/DZSbAZFtg/ab0ExjuH7/jRAmwqD1sVP7eDHOYUOcR1mHDK9WkTHa9QSelJKQC8zPjpmaueqpp27Z/6eE/zMV4CtNHoaswxZ+/oz+kWpHNcGp3GSknEUk3HZbXRSkIxqvCemUPaxVOpfBKRkSMIr4yFsqDSaIzHDss0314Yrezh88lDKt/5mwf4EC42uXCN6UuVjbvMvPHSnGl0dR/FeJzajauLd2iMG9l+CzxvQIKWWe7h8QjBUw5DmapCiKfaUer8vT7b2vrPwlTzZTwVePj0T+HKEO9XKWcRjJiLjglCvn9vYnZ5ej+MxY22ON0VP4dIAbEdd5pySpdo4Qx5Jsr1LeS6GvHm1tCH6z9fmbXmUyedDeh/QfK/8HBQ5+GReV9PCZlbnwousbXty+7/CxKJodV3S7MbqOpRdCFnxf9IY5sW1h27Ttv7r/6sKBqREzAOY1B6rroVz/BVapnH4Zl5EpAAAAAElFTkSuQmCC">
+<title>TaxonomIA · DTE — Ministerio de Ciencia, Tecnología, Conocimiento e Innovación</title>
+<meta name="description" content="Plataforma de vigilancia y prospectiva tecnológica de la División de Tecnologías Emergentes (MinCiencia). Acceso a la plataforma TaxonomIA.">
+<link rel="canonical" href="https://taxonomia-dte.onrender.com/">
+<!-- Túnel: la URL pública (github.io) dirige a la plataforma alojada en Render. -->
+<meta http-equiv="refresh" content="4;url=https://taxonomia-dte.onrender.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23282BA5'/%3E%3Crect x='5' y='24' width='7.3' height='3' fill='%232E86C1'/%3E%3Crect x='12.3' y='24' width='7.4' height='3' fill='%23fff'/%3E%3Crect x='19.7' y='24' width='7.3' height='3' fill='%23D42020'/%3E%3Ctext x='16' y='18.5' font-family='Segoe UI,Arial,sans-serif' font-size='10.5' font-weight='800' fill='%23fff' text-anchor='middle' letter-spacing='0.5'%3EDTE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* Sistema visual tomado de la app (core/templates/web/): misma paleta
-   institucional, tipografía, radios y sombras. Sin CDNs: offline-first. */
-:root {
-    --gob-blue:       #282BA5;
-    --gob-blue-dark:  #1E2278;
-    --gob-blue-light: #3538B5;
-    --gob-red:        #D42020;
-    --gob-white:      #FFFFFF;
-    --bg-primary:     linear-gradient(145deg, #1A1D7A 0%, #282BA5 40%, #1E2278 100%);
-    --surface:        #FFFFFF;
-    --surface-hover:  #F4F5FB;
-    --surface-active: #EBEDF8;
-    --text:           #1A1A2E;
-    --text-secondary: #3D3D5C;
-    --text-muted:     #565C84;
-    --text-hint:      #9499B8;
-    --border:         #E2E4F0;
-    --green:          #059669;
-    --green-bg:       rgba(5,150,105,0.08);
-    --amber:          #B45309;
-    --amber-bg:       rgba(217,119,6,0.10);
-    --red:            #DC2626;
-    --red-bg:         rgba(220,38,38,0.07);
-    --tri-blue:       #2E86C1;
-    --tri-white:      #FFFFFF;
-    --tri-red:        #D42020;
-    --on-dark:        rgba(255,255,255,0.82);
-    --on-dark-soft:   rgba(255,255,255,0.66);
-    --font:           "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --radius:         12px;
-    --radius-sm:      8px;
-    --radius-lg:      16px;
-    --shadow:         0 8px 32px rgba(26,29,122,0.12), 0 2px 8px rgba(0,0,0,0.06);
-    --shadow-lift:    0 14px 44px rgba(13,16,90,0.20), 0 3px 12px rgba(0,0,0,0.08);
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#282BA5;--blue-deep:#161960;--blue-light:#3538B5;--red:#D42020;
+  --tri-blue:#2E86C1;--tri-red:#D42020;
+  --ink:#1A1A2E;--mut:rgba(255,255,255,.74);
+  --font:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
 }
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html { -webkit-text-size-adjust: 100%; }
-
-body {
-    font-family: var(--font);
-    background: var(--bg-primary);
-    min-height: 100vh;
-    color: var(--text);
-    line-height: 1.55;
-    font-size: 15px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Barra tricolor institucional (idéntica a la de la app) */
-.tricolor-bar {
-    height: 6px;
-    background: linear-gradient(90deg,
-        var(--tri-blue) 0%, var(--tri-blue) 33%,
-        var(--tri-white) 33%, var(--tri-white) 66%,
-        var(--tri-red) 66%, var(--tri-red) 100%);
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-}
-
-/* Accesibilidad: anillo de foco consistente con la app */
-:focus-visible { outline: 3px solid var(--gob-blue); outline-offset: 2px; border-radius: var(--radius-sm); }
-.on-dark :focus-visible, a.skip:focus-visible { outline-color: var(--gob-white); }
-
-a.skip {
-    position: absolute; left: -9999px; top: 8px;
-    background: var(--gob-white); color: var(--gob-blue);
-    padding: 8px 16px; border-radius: var(--radius-sm);
-    font-weight: 700; text-decoration: none; z-index: 1001;
-}
-a.skip:focus { left: 12px; }
-
-/* ── Header institucional ─────────────────────────────────────────── */
-.site-header {
-    padding: 40px 24px 0;
-    text-align: center;
-}
-.gov-line {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--on-dark-soft);
-    line-height: 1.7;
-    max-width: 640px;
-    margin: 0 auto;
-}
-.gov-line .dot {
-    display: inline-block;
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--gob-red);
-    vertical-align: middle;
-    margin: 0 8px 2px;
-}
-
-/* ── Hero ─────────────────────────────────────────────────────────── */
-.hero {
-    text-align: center;
-    padding: 26px 24px 8px;
-    max-width: 660px;
-    margin: 0 auto;
-}
-.hero h1 {
-    font-size: clamp(2.3rem, 6vw, 3.1rem);
-    font-weight: 800;
-    color: var(--gob-white);
-    letter-spacing: -0.02em;
-    line-height: 1.08;
-    margin-bottom: 14px;
-}
-.hero p {
-    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
-    color: var(--on-dark);
-    font-weight: 500;
-    max-width: 560px;
-    margin: 0 auto;
-}
-
-/* ── Cards de acceso ──────────────────────────────────────────────── */
-main {
-    flex: 1;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 30px 24px 12px;
-}
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    align-items: stretch;
-}
-.access-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
-    padding: 26px 26px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.access-card .eyebrow {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-}
-.access-card h2 {
-    font-size: 1.18rem;
-    font-weight: 800;
-    letter-spacing: -0.015em;
-    color: var(--gob-blue);
-    line-height: 1.3;
-}
-.access-card .desc {
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-    flex: 1;
-}
-
-/* Estado: pill + detalle */
-.status-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-height: 30px; }
-.pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 5px 12px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    background: var(--surface-hover);
-    color: var(--text-muted);
-    white-space: nowrap;
-}
-.pill .ind {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--text-hint);
-    flex: none;
-}
-.pill.checking .ind { animation: blink 1.2s ease-in-out infinite; }
-.pill.online  { color: var(--green); border-color: rgba(5,150,105,0.30); background: var(--green-bg); }
-.pill.online .ind { background: var(--green); animation: pulse 1.8s ease-out infinite; }
-.pill.stale   { color: var(--amber); border-color: rgba(180,83,9,0.30); background: var(--amber-bg); }
-.pill.stale .ind { background: var(--amber); }
-.pill.offline { color: var(--red); border-color: rgba(220,38,38,0.28); background: var(--red-bg); }
-.pill.offline .ind { background: var(--red); }
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
-@keyframes pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(5,150,105,0.45); }
-    70%  { box-shadow: 0 0 0 9px rgba(5,150,105,0); }
-    100% { box-shadow: 0 0 0 0 rgba(5,150,105,0); }
-}
-.status-meta {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-/* Botón principal (mismo lenguaje que .btn-primary de la app) */
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    width: 100%;
-    padding: 14px 22px;
-    border: none;
-    border-radius: var(--radius);
-    font-family: var(--font);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--gob-white);
-    background: var(--gob-blue);
-    box-shadow: 0 4px 14px rgba(40,43,165,0.20);
-}
-.btn .arrow { font-weight: 800; }
-.btn:hover {
-    background: var(--gob-blue-light);
-    box-shadow: 0 9px 24px rgba(40,43,165,0.30);
-    transform: translateY(-1px);
-    text-decoration: none;
-}
-.btn[aria-disabled="true"] {
-    background: var(--surface-active);
-    color: var(--text-hint);
-    box-shadow: none;
-    cursor: not-allowed;
-    pointer-events: none;
-    transform: none;
-}
-
-/* Nota de rotación de URLs */
-.rotate-note {
-    max-width: 660px;
-    margin: 26px auto 0;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--on-dark-soft);
-    line-height: 1.65;
-    padding: 0 4px;
-}
-.rotate-note strong { color: var(--on-dark); font-weight: 700; }
-
-/* ── Footer institucional ─────────────────────────────────────────── */
-.site-footer {
-    text-align: center;
-    padding: 34px 24px 38px;
-}
-.site-footer .rule {
-    width: 56px; height: 2px;
-    margin: 0 auto 20px;
-    background: rgba(255,255,255,0.22);
-    border-radius: 1px;
-}
-.site-footer .org {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--on-dark);
-    line-height: 1.7;
-}
-.site-footer .legal {
-    margin-top: 10px;
-    font-size: 0.72rem;
-    color: var(--on-dark-soft);
-    line-height: 1.7;
-    max-width: 560px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ── Transiciones suaves (solo si el usuario no las redujo) ───────── */
-@media (prefers-reduced-motion: no-preference) {
-    .access-card { transition: box-shadow .22s ease, transform .18s ease, border-color .18s ease; }
-    .access-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); border-color: #C8CBE0; }
-    .btn { transition: background .18s ease, box-shadow .18s ease, transform .15s ease; }
-    .pill { transition: background .18s ease, color .18s ease, border-color .18s ease; }
-}
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: .001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .001ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-/* ── Responsive ───────────────────────────────────────────────────── */
-@media (max-width: 680px) {
-    .site-header { padding-top: 32px; }
-    .hero { padding-top: 20px; }
-    main { padding: 24px 16px 8px; }
-    .access-card { padding: 22px 20px 20px; }
-}
+html,body{height:100%}
+body{font-family:var(--font);color:#fff;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(1200px 680px at 50% -10%,#3a3ec0 0%,rgba(58,62,192,0) 55%),
+    linear-gradient(160deg,#1A1D7A 0%,#282BA5 44%,#161960 100%);
+  background-attachment:fixed;min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;overflow:hidden;position:relative;text-align:center;padding:28px}
+.tri{height:6px;width:100%;position:fixed;top:0;left:0;z-index:5;
+  background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#fff 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
+.aura{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(520px 520px at 50% 42%,rgba(120,140,255,.16),transparent 70%)}
+.card{position:relative;z-index:2;max-width:620px;width:100%;
+  animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.crest{display:inline-flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:22px;
+  background:linear-gradient(150deg,#fff,#eef0ff);box-shadow:0 22px 60px rgba(8,10,60,.5),inset 0 0 0 1px rgba(255,255,255,.6);
+  margin:0 auto 26px;position:relative}
+.crest svg{width:54px;height:54px}
+.crest::after{content:"";position:absolute;left:18px;right:18px;bottom:13px;height:3px;border-radius:2px;
+  background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#cfd3ef 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+h1{font-weight:900;font-size:clamp(40px,8vw,68px);line-height:.98;letter-spacing:-.03em}
+h1 b{color:#c9cdff;font-weight:900}
+.tagline{font-size:clamp(14px,2.4vw,17px);color:rgba(255,255,255,.88);font-weight:500;
+  max-width:480px;margin:14px auto 0;line-height:1.55}
+.cta{display:inline-flex;align-items:center;gap:11px;margin-top:34px;padding:16px 30px;border-radius:999px;
+  font-size:16px;font-weight:700;color:var(--blue);text-decoration:none;
+  background:linear-gradient(180deg,#fff,#eef0ff);box-shadow:0 16px 40px rgba(6,8,50,.45),0 0 0 1px rgba(255,255,255,.5);
+  transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s}
+.cta:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 22px 56px rgba(6,8,50,.55)}
+.cta .arr{transition:transform .18s}.cta:hover .arr{transform:translateX(4px)}
+.redir{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:11px}
+.bar{width:230px;height:4px;border-radius:999px;background:rgba(255,255,255,.18);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;border-radius:999px;transform-origin:left;transform:scaleX(0);
+  background:linear-gradient(90deg,#7fb2ff,#fff);animation:fill 4s linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.redir small{font-size:12px;color:var(--mut);letter-spacing:.01em}
+.redir small a{color:#cfd3ff;text-decoration:none;font-weight:600;border-bottom:1px solid rgba(207,211,255,.35)}
+.redir small a:hover{color:#fff}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:2;padding:16px 22px;
+  font-size:11.5px;color:rgba(255,255,255,.6);line-height:1.6}
+footer b{color:rgba(255,255,255,.82);font-weight:700}
+@media (max-height:560px){.crest{width:64px;height:64px;border-radius:16px;margin-bottom:16px}.crest svg{width:40px;height:40px}.redir{margin-top:18px}h1{font-size:clamp(34px,9vw,52px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.bar i{transform:scaleX(1)}}
 </style>
 </head>
 <body>
-<div class="tricolor-bar"></div>
-<a class="skip" href="#acceso">Ir al acceso</a>
-<header class="site-header">
-    <p class="gov-line"><span class="dot"></span> Gobierno de Chile <span class="dot"></span></p>
-</header>
-
-<section class="hero on-dark">
-    <h1>TaxonomIA</h1>
-    <p>Plataforma de clasificación taxonómica y prospectiva de tecnologías
-       emergentes. Seleccione la edición que le corresponde para acceder.</p>
-</section>
-
-<main id="acceso">
-    <div class="cards">
-        <article class="access-card" data-pointer="url_interna.json">
-            <p class="eyebrow">Uso institucional</p>
-            <h2>TaxonomIA - Edición interna (DTE)</h2>
-            <p class="desc">Entorno de trabajo de la División de Tecnologías
-               Emergentes: clasificación, evidencia y análisis en lenguaje técnico.</p>
-            <div class="status-row" role="status" aria-live="polite">
-                <span class="pill checking"><span class="ind" aria-hidden="true"></span><span class="pill-text">Comprobando disponibilidad…</span></span>
-                <span class="status-meta"></span>
-            </div>
-            <a class="btn" href="#" aria-disabled="true">
-                <span class="btn-text">Comprobando…</span><span class="arrow" aria-hidden="true">→</span>
-            </a>
-        </article>
-
-        <article class="access-card" data-pointer="url_externa.json">
-            <p class="eyebrow">Uso general</p>
-            <h2>TaxonomIA - Edición externa</h2>
-            <p class="desc">Versión de consulta abierta a contrapartes e
-               instituciones, con resultados explicados en lenguaje claro.</p>
-            <div class="status-row" role="status" aria-live="polite">
-                <span class="pill checking"><span class="ind" aria-hidden="true"></span><span class="pill-text">Comprobando disponibilidad…</span></span>
-                <span class="status-meta"></span>
-            </div>
-            <a class="btn" href="#" aria-disabled="true">
-                <span class="btn-text">Comprobando…</span><span class="arrow" aria-hidden="true">→</span>
-            </a>
-        </article>
-    </div>
-
-    <p class="rotate-note on-dark">
-        <strong>Las direcciones de acceso rotan por seguridad</strong> en cada
-        arranque del servicio. No las guarde en favoritos: esta página muestra
-        siempre la dirección vigente de cada edición.
-    </p>
-
-    <noscript>
-        <p class="rotate-note on-dark">
-            Esta página necesita JavaScript para comprobar la disponibilidad
-            de las plataformas y mostrar el enlace de acceso vigente.
-        </p>
-    </noscript>
+<div class="tri"></div>
+<div class="aura"></div>
+<main class="card">
+  <div class="crest" aria-hidden="true">
+    <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#282BA5"/><text x="16" y="20" font-family="Montserrat,Segoe UI,Arial,sans-serif" font-size="12.5" font-weight="900" fill="#fff" text-anchor="middle" letter-spacing="0.5">DTE</text></svg>
+  </div>
+  <div class="eyebrow">División de Tecnologías Emergentes · MinCiencia</div>
+  <h1>Taxonom<b>IA</b></h1>
+  <p class="tagline">Vigilancia y prospectiva tecnológica para la toma de decisiones del Estado de Chile.</p>
+  <a class="cta" href="https://taxonomia-dte.onrender.com/">Entrar a la plataforma <span class="arr">&rarr;</span></a>
+  <div class="redir">
+    <div class="bar" aria-hidden="true"><i></i></div>
+    <small>Redirigiendo a <a href="https://taxonomia-dte.onrender.com/">taxonomia-dte.onrender.com</a></small>
+  </div>
 </main>
-
-<footer class="site-footer on-dark">
-    <div class="rule" aria-hidden="true"></div>
-    <p class="org">
-        División de Tecnologías Emergentes<br>
-        Ministerio de Ciencia, Tecnología, Conocimiento e Innovación
-    </p>
-    <p class="legal">
-        Acceso restringido a personas usuarias autorizadas. Si una edición
-        figura fuera de línea, el servicio se encuentra temporalmente apagado;
-        esta página volverá a habilitar el acceso de forma automática.
-    </p>
-</footer>
-
+<footer><b>TaxonomIA</b> · División de Tecnologías Emergentes · Ministerio de Ciencia, Tecnología, Conocimiento e Innovación · Gobierno de Chile</footer>
 <script>
-// Cada app publica su propio puntero al arrancar (deploy/publish_url.py):
-//   url_interna.json  → APP_TAX_DTE (edición interna, DTE)
-//   url_externa.json  → APP_TAX    (edición externa)
-// Aquí solo se leen ambos punteros, se muestra el estado y se habilita el
-// botón con la URL vigente del túnel. Formato: {"url": "...", "updated": ISO}.
-(function () {
-    "use strict";
-    var RECHECK_MS = 30000;        // reintento periódico (por si encienden el server)
-    var STALE_H = 24;              // > 24 h sin republicar: aviso de publicación antigua
-
-    function relTime(iso) {
-        var t = Date.parse(iso || "");
-        if (isNaN(t)) return null;
-        var mins = Math.max(0, Math.floor((Date.now() - t) / 60000));
-        if (mins < 1) return "hace instantes";
-        if (mins < 60) return "hace " + mins + " min";
-        var hours = Math.floor(mins / 60);
-        if (hours < 48) return "hace " + hours + " h";
-        return "hace " + Math.floor(hours / 24) + " días";
-    }
-
-    function ageHours(iso) {
-        var t = Date.parse(iso || "");
-        return isNaN(t) ? null : (Date.now() - t) / 3600000;
-    }
-
-    function render(card, state, data) {
-        var pill = card.querySelector(".pill"),
-            ptxt = card.querySelector(".pill-text"),
-            meta = card.querySelector(".status-meta"),
-            btn  = card.querySelector(".btn"),
-            btxt = card.querySelector(".btn-text");
-
-        if (state === "online" || state === "stale") {
-            var when = relTime(data.updated);
-            pill.className = "pill " + (state === "stale" ? "stale" : "online");
-            ptxt.textContent = state === "stale" ? "Publicación antigua" : "En línea";
-            meta.textContent = when
-                ? "Acceso publicado " + when + (state === "stale" ? "; podría haber expirado." : ".")
-                : "Acceso publicado.";
-            btn.href = data.url;
-            btn.removeAttribute("aria-disabled");
-            btn.setAttribute("rel", "noopener");
-            btxt.textContent = "Acceder";
-        } else {
-            pill.className = "pill offline";
-            ptxt.textContent = "Fuera de línea";
-            meta.textContent = "El servicio está apagado en este momento. " +
-                "Vuelva a intentarlo más tarde: esta página se actualiza sola.";
-            btn.href = "#";
-            btn.setAttribute("aria-disabled", "true");
-            btxt.textContent = "No disponible";
-        }
-    }
-
-    function check(card) {
-        var pointer = card.getAttribute("data-pointer");
-        // Cache-busting: GitHub Pages cachea agresivo; el querystring fuerza
-        // a traer el puntero recién publicado.
-        fetch(pointer + "?cb=" + Date.now(), { cache: "no-store" })
-            .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-            .then(function (d) {
-                var url = (d && d.url ? String(d.url) : "").trim();
-                if (!url) { render(card, "offline"); return; }
-                var h = ageHours(d.updated);
-                render(card, (h !== null && h > STALE_H) ? "stale" : "online", { url: url, updated: d.updated });
-            })
-            .catch(function () { render(card, "offline"); });
-    }
-
-    var cards = Array.prototype.slice.call(document.querySelectorAll(".access-card[data-pointer]"));
-    function checkAll() { cards.forEach(check); }
-    checkAll();
-    setInterval(checkAll, RECHECK_MS);
-})();
+  (function(){
+    var URL="https://taxonomia-dte.onrender.com/";
+    var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+    setTimeout(function(){ location.replace(URL); }, reduce?200:4000);
+  })();
 </script>
 </body>
 </html>
