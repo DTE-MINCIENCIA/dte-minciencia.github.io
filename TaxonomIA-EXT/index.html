@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#282BA5">
+<title>TaxonomIA · Acceso público — DTE · MinCiencia</title>
+<meta name="description" content="Edición pública de demostración de TaxonomIA, plataforma de vigilancia y prospectiva tecnológica de la División de Tecnologías Emergentes (MinCiencia).">
+<link rel="canonical" href="https://taxonomia-ext.onrender.com/">
+<!-- Túnel externo: la URL pública (github.io) dirige a la edición pública alojada en Render. -->
+<meta http-equiv="refresh" content="4;url=https://taxonomia-ext.onrender.com/">
+<link rel="icon" type="image/png" href="DTE.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#282BA5;--blue-deep:#161960;--teal:#0E7C86;--teal-glow:#2BC0CE;--red:#D42020;
+  --tri-blue:#2E86C1;--tri-red:#D42020;
+  --mut:rgba(255,255,255,.74);
+  --font:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+html,body{height:100%}
+body{font-family:var(--font);color:#fff;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(1200px 680px at 50% -10%,#1f6f8f 0%,rgba(31,111,143,0) 55%),
+    linear-gradient(160deg,#13235e 0%,#1c3f7a 46%,#0f2350 100%);
+  background-attachment:fixed;min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;overflow:hidden;position:relative;text-align:center;padding:28px}
+.tri{height:6px;width:100%;position:fixed;top:0;left:0;z-index:5;
+  background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#fff 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
+.aura{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(520px 520px at 50% 42%,rgba(43,192,206,.16),transparent 70%)}
+.card{position:relative;z-index:2;max-width:640px;width:100%;
+  animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.crest{display:inline-flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:22px;
+  background:linear-gradient(150deg,#fff,#e7f6f8);box-shadow:0 22px 60px rgba(6,30,50,.5),inset 0 0 0 1px rgba(255,255,255,.6);
+  margin:0 auto 24px;position:relative}
+.crest img{width:54px;height:54px;object-fit:contain;display:block}
+.crest::after{content:"";position:absolute;left:18px;right:18px;bottom:13px;height:3px;border-radius:2px;
+  background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#cfe7ea 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
+.badge{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:#bff0f5;background:rgba(43,192,206,.14);border:1px solid rgba(43,192,206,.4);
+  padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal-glow);box-shadow:0 0 10px var(--teal-glow)}
+h1{font-weight:900;font-size:clamp(38px,7.5vw,64px);line-height:1;letter-spacing:-.03em}
+h1 b{color:#9fe9f1;font-weight:900}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-top:12px}
+.tagline{font-size:clamp(14px,2.4vw,16.5px);color:rgba(255,255,255,.88);font-weight:500;
+  max-width:500px;margin:13px auto 0;line-height:1.55}
+.cta{display:inline-flex;align-items:center;gap:11px;margin-top:32px;padding:16px 30px;border-radius:999px;
+  font-size:16px;font-weight:700;color:#0d3b42;text-decoration:none;
+  background:linear-gradient(180deg,#fff,#e7f6f8);box-shadow:0 16px 40px rgba(4,24,40,.45),0 0 0 1px rgba(255,255,255,.5);
+  transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s}
+.cta:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 22px 56px rgba(4,24,40,.55)}
+.cta .arr{transition:transform .18s}.cta:hover .arr{transform:translateX(4px)}
+.redir{margin-top:24px;display:flex;flex-direction:column;align-items:center;gap:11px}
+.bar{width:230px;height:4px;border-radius:999px;background:rgba(255,255,255,.18);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;border-radius:999px;transform-origin:left;transform:scaleX(0);
+  background:linear-gradient(90deg,#2bc0ce,#fff);animation:fill 4s linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.redir small{font-size:12px;color:var(--mut)}
+.redir small a{color:#bff0f5;text-decoration:none;font-weight:600;border-bottom:1px solid rgba(191,240,245,.35)}
+.redir small a:hover{color:#fff}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:2;padding:16px 22px;
+  font-size:11.5px;color:rgba(255,255,255,.6);line-height:1.6}
+footer b{color:rgba(255,255,255,.82);font-weight:700}
+@media (max-height:580px){.crest{width:64px;height:64px;border-radius:16px;margin-bottom:14px}.crest svg{width:40px;height:40px}.redir{margin-top:16px}h1{font-size:clamp(32px,9vw,50px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.bar i{transform:scaleX(1)}}
+</style>
+</head>
+<body>
+<div class="tri"></div>
+<div class="aura"></div>
+<main class="card">
+  <div class="crest"><img src="DTE.png" alt="DTE"></div>
+  <div class="badge">Acceso público · demostración</div>
+  <h1>Taxonom<b>IA</b></h1>
+  <div class="eyebrow">División de Tecnologías Emergentes · MinCiencia</div>
+  <p class="tagline">Edición pública de demostración: explora la vigilancia y prospectiva tecnológica de la plataforma.</p>
+  <a class="cta" href="https://taxonomia-ext.onrender.com/">Entrar a la demostración <span class="arr">&rarr;</span></a>
+  <div class="redir">
+    <div class="bar" aria-hidden="true"><i></i></div>
+    <small>Redirigiendo a <a href="https://taxonomia-ext.onrender.com/">taxonomia-ext.onrender.com</a></small>
+  </div>
+</main>
+<footer><b>TaxonomIA</b> · Edición pública · División de Tecnologías Emergentes · Ministerio de Ciencia, Tecnología, Conocimiento e Innovación</footer>
+<script>
+  (function(){
+    var URL="https://taxonomia-ext.onrender.com/";
+    var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+    setTimeout(function(){ location.replace(URL); }, reduce?200:4000);
+  })();
+</script>
+</body>
+</html>
