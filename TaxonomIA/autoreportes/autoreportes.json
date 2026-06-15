@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T12:15:07.673399+00:00",
+  "updated": "2026-06-15T13:12:05.846155+00:00",
   "reports": [
     {
       "id": "commodities",
@@ -72,47 +72,38 @@
       "id": "barrido",
       "title": "Barrido semanal de evidencia",
       "subtitle": "Nuevos papers, patentes e instrumentos de fomento sobre los temas en seguimiento",
-      "period": "Semana del 26 de mayo al 1 de junio de 2026",
-      "status": "ok",
-      "interpretation": "Aumenta la producción en materiales magnéticos y procesamiento de señales aplicado a sensado remoto; aparece un instrumento CORFO atingente a economía circular de minerales. La continuidad respecto de la semana anterior es estable, sin quiebres de tendencia.",
+      "period": "2026-06-15 09:09 · stock + patentes + papers",
+      "status": "event",
+      "interpretation": "La presente corrida revierte completamente la tendencia de fallos observada en las dos lecturas anteriores, al recuperar 16 registros de patentes y, por primera vez, 4.111 papers y 10.307 registros de Corfo, lo que restablece la cobertura total del monitoreo. Se confirma que los problemas previos eran atribuibles a fallas de configuración y no a una ausencia real de actividad tecnológica, ya que las fuentes ahora entregan volúmenes significativos de información. La madurez de las tecnologías identificadas se concentra en TRL 2 y 3, indicando un ecosistema de innovación en etapas tempranas de desarrollo. Se recomienda priorizar el análisis de los 10.307 registros de Corfo, por su volumen y potencial para identificar proyectos de I+D aplicada que puedan escalar las tecnologías de baja madurez detectadas.",
       "blocks": [
         {
           "type": "table",
           "heading": "Volumen capturado por fuente",
           "columns": [
             "Fuente",
-            "Nuevos registros",
-            "Atingentes"
+            "Estado",
+            "Filas"
           ],
           "rows": [
             [
-              "arXiv / repositorios de preprints",
-              "1.284",
-              "37"
+              "patents",
+              "ok",
+              "16"
             ],
             [
-              "Patentes (Lens / EPO OPS)",
-              "412",
-              "9"
+              "papers",
+              "ok",
+              "4111"
             ],
             [
-              "CORFO / ANID (fomento)",
-              "23",
-              "3"
+              "corfo",
+              "ok",
+              "10307"
             ]
-          ]
-        },
-        {
-          "type": "list",
-          "heading": "Temas con mayor movimiento",
-          "items": [
-            "Materiales magnéticos y orbitales 6f para imanes permanentes sin tierras raras pesadas.",
-            "Procesamiento de señales para monitoreo geofísico de relaves.",
-            "Hidrometalurgia de bajo impacto para recuperación de cobre."
           ]
         }
       ],
-      "updated": "2026-06-02T08:15:00+00:00"
+      "updated": "2026-06-15T13:12:05.343091+00:00"
     },
     {
       "id": "saturacion",
