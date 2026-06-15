@@ -5,105 +5,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#282BA5">
-<title>TaxonomIA · Autoreportes — DTE · MinCiencia</title>
-<meta name="description" content="Autoreportes de vigilancia tecnológica — commodities estratégicos, barrido semanal y saturación de evidencia. División de Tecnologías Emergentes, MinCiencia.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2032%2032%27%3E%3Crect%20width=%2732%27%20height=%2732%27%20rx=%277%27%20fill=%27%23282BA5%27/%3E%3Crect%20x=%276%27%20y=%2723%27%20width=%276.7%27%20height=%273%27%20fill=%27%232E86C1%27/%3E%3Crect%20x=%2712.7%27%20y=%2723%27%20width=%276.6%27%20height=%273%27%20fill=%27%23fff%27/%3E%3Crect%20x=%2719.3%27%20y=%2723%27%20width=%276.7%27%20height=%273%27%20fill=%27%23D42020%27/%3E%3Ctext%20x=%2716%27%20y=%2719%27%20font-family=%27Segoe%20UI,Arial,sans-serif%27%20font-size=%2715%27%20font-weight=%27800%27%20fill=%27%23fff%27%20text-anchor=%27middle%27%3ET%3C/text%3E%3C/svg%3E">
+<title>TaxonomIA · Boletín · DTE · Ministerio de Ciencia, Tecnología, Conocimiento e Innovación</title>
+<meta name="description" content="Boletín de vigilancia y prospectiva tecnológica de la División de Tecnologías Emergentes (MinCiencia): commodities estratégicos, barrido semanal de evidencia y saturación temática.">
+<link rel="canonical" href="https://taxonomia-dte.onrender.com/boletin">
+<!-- La URL pública (github.io) dirige al boletín alojado en Render. -->
+<meta http-equiv="refresh" content="4;url=https://taxonomia-dte.onrender.com/boletin">
+<link rel="icon" type="image/png" href="https://taxonomia-dte.onrender.com/static/logos/DTE.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --gob-blue:#282BA5;--gob-blue-light:#3538B5;--gob-red:#D42020;
-  --bg:linear-gradient(145deg,#1A1D7A 0%,#282BA5 40%,#1E2278 100%);
-  --surface:#fff;--surface-hover:#F4F5FB;
-  --text:#1A1A2E;--text-secondary:#3D3D5C;--text-muted:#565C84;--text-hint:#9499B8;
-  --border:#E2E4F0;
-  --green:#047857;--green-bg:rgba(5,150,105,.10);
-  --amber:#B45309;--amber-bg:rgba(217,119,6,.12);
+  --blue:#282BA5;--blue-deep:#161960;--blue-light:#3538B5;--red:#D42020;
   --tri-blue:#2E86C1;--tri-red:#D42020;
+  --ink:#1A1A2E;--mut:rgba(255,255,255,.74);
   --font:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  --radius-lg:16px;
-  --shadow:0 14px 44px rgba(13,16,90,.18),0 3px 12px rgba(0,0,0,.06);
 }
-html{scroll-behavior:smooth}
-body{font-family:var(--font);background:var(--bg);background-attachment:fixed;color:var(--text);
-  min-height:100vh;-webkit-font-smoothing:antialiased;padding:0 0 64px;line-height:1.55}
-.tricolor-bar{height:6px;position:fixed;top:0;left:0;right:0;z-index:1000;
-  background:linear-gradient(90deg,var(--tri-blue) 0 33%,#fff 33% 66%,var(--tri-red) 66% 100%)}
-.wrap{max-width:920px;margin:0 auto;padding:0 22px}
-header.hero{padding:54px 0 22px;text-align:center;color:#fff}
-.brand{display:inline-flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.18em;
-  text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:700;margin-bottom:18px}
-.brand b{width:7px;height:7px;border-radius:50%;background:var(--gob-red);box-shadow:0 0 10px var(--gob-red)}
-h1{font-weight:800;font-size:clamp(32px,6vw,52px);line-height:1.04;letter-spacing:-.02em;margin-bottom:12px;color:#fff}
-h1 span{color:#cdd0ff}
-.sub{font-size:clamp(14px,2.3vw,16.5px);color:rgba(255,255,255,.86);font-weight:500;
-  max-width:560px;margin:0 auto;line-height:1.55}
-.updated{font-size:12.5px;color:rgba(255,255,255,.74);margin-top:14px}
-.updated .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#34d399;
-  margin-right:7px;vertical-align:middle;box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pulse 2s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
-nav.jumps{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:6px 0 18px}
-nav.jumps a{font-size:12.5px;font-weight:600;color:#fff;text-decoration:none;padding:7px 14px;
-  border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.10);transition:.16s}
-nav.jumps a:hover{background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.5)}
-.report{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);
-  padding:28px 30px 24px;margin-bottom:22px;box-shadow:var(--shadow);scroll-margin-top:24px}
-.rhead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.rtitle{font-weight:700;font-size:clamp(19px,3vw,24px);letter-spacing:-.01em;line-height:1.2;color:var(--text)}
-.rsubtitle{font-size:13.5px;color:var(--text-secondary);margin-top:4px;font-weight:500}
-.badge{flex:none;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
-  padding:6px 12px;border-radius:999px;border:1px solid transparent;white-space:nowrap;align-self:flex-start}
-.badge.event{color:var(--amber);background:var(--amber-bg);border-color:rgba(217,119,6,.30)}
-.badge.heartbeat{color:var(--green);background:var(--green-bg);border-color:rgba(5,150,105,.28)}
-.badge.ok{color:var(--gob-blue);background:rgba(40,43,165,.08);border-color:rgba(40,43,165,.22)}
-.rmeta{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;color:var(--text-muted);margin:10px 0 16px}
-.interp{background:rgba(40,43,165,.05);border-left:3px solid var(--gob-blue);border-radius:10px;
-  padding:14px 16px;margin-bottom:18px}
-.interp .lbl{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-  color:var(--gob-blue);margin-bottom:6px}
-.interp p{font-size:14px;line-height:1.6;color:var(--text-secondary)}
-.block{margin-bottom:16px}.block:last-child{margin-bottom:0}
-.bhead{font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--text-muted);
-  margin-bottom:9px;padding-bottom:6px;border-bottom:1px solid var(--border)}
-table{width:100%;border-collapse:collapse;font-size:13.5px}
-thead th{text-align:left;font-weight:700;color:var(--text-muted);padding:7px 12px;font-size:11.5px;
-  text-transform:uppercase;letter-spacing:.02em}
-tbody td{padding:9px 12px;border-top:1px solid var(--border);color:var(--text-secondary);vertical-align:top}
-tbody td:first-child{font-weight:600;color:var(--text)}
-tbody tr:hover{background:var(--surface-hover)}
-ul.items{list-style:none;display:flex;flex-direction:column;gap:7px}
-ul.items li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.55;color:var(--text-secondary)}
-ul.items li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gob-blue)}
-.btext{font-size:14px;line-height:1.62;color:var(--text-secondary);white-space:pre-line}
-.empty{text-align:center;color:var(--text-hint);padding:26px 10px;font-size:13.5px}
-footer{text-align:center;margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);
-  font-size:12px;color:rgba(255,255,255,.72);line-height:1.7}
-footer a{color:#cdd0ff;text-decoration:none;font-weight:600}
-footer a:hover{color:#fff;text-decoration:underline}
-@media(max-width:560px){.report{padding:22px 18px}.wrap{padding:0 14px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+html,body{height:100%}
+body{font-family:var(--font);color:#fff;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(1200px 680px at 50% -10%,#3a3ec0 0%,rgba(58,62,192,0) 55%),
+    linear-gradient(160deg,#1A1D7A 0%,#282BA5 44%,#161960 100%);
+  background-attachment:fixed;min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;overflow:hidden;position:relative;text-align:center;padding:28px}
+.tri{height:6px;width:100%;position:fixed;top:0;left:0;z-index:5;
+  background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#fff 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
+.aura{position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(520px 520px at 50% 42%,rgba(120,140,255,.16),transparent 70%)}
+.card{position:relative;z-index:2;max-width:620px;width:100%;
+  animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.crest{display:inline-flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:22px;
+  background:linear-gradient(150deg,#fff,#eef0ff);box-shadow:0 22px 60px rgba(8,10,60,.5),inset 0 0 0 1px rgba(255,255,255,.6);
+  margin:0 auto 26px;position:relative}
+.crest img{width:54px;height:54px;object-fit:contain;display:block}
+.crest::after{content:"";position:absolute;left:18px;right:18px;bottom:13px;height:3px;border-radius:2px;
+  background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#cfd3ef 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+h1{font-weight:900;font-size:clamp(40px,8vw,68px);line-height:.98;letter-spacing:-.03em}
+h1 b{color:#c9cdff;font-weight:900}
+.tagline{font-size:clamp(14px,2.4vw,17px);color:rgba(255,255,255,.88);font-weight:500;
+  max-width:480px;margin:14px auto 0;line-height:1.55}
+.cta{display:inline-flex;align-items:center;gap:11px;margin-top:34px;padding:16px 30px;border-radius:999px;
+  font-size:16px;font-weight:700;color:var(--blue);text-decoration:none;
+  background:linear-gradient(180deg,#fff,#eef0ff);box-shadow:0 16px 40px rgba(6,8,50,.45),0 0 0 1px rgba(255,255,255,.5);
+  transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .18s}
+.cta:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 22px 56px rgba(6,8,50,.55)}
+.cta .arr{transition:transform .18s}.cta:hover .arr{transform:translateX(4px)}
+.redir{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:11px}
+.bar{width:230px;height:4px;border-radius:999px;background:rgba(255,255,255,.18);overflow:hidden}
+.bar i{display:block;height:100%;width:100%;border-radius:999px;transform-origin:left;transform:scaleX(0);
+  background:linear-gradient(90deg,#7fb2ff,#fff);animation:fill 4s linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+.redir small{font-size:12px;color:var(--mut);letter-spacing:.01em}
+.redir small a{color:#cfd3ff;text-decoration:none;font-weight:600;border-bottom:1px solid rgba(207,211,255,.35)}
+.redir small a:hover{color:#fff}
+footer{position:fixed;left:0;right:0;bottom:0;z-index:2;padding:16px 22px;
+  font-size:11.5px;color:rgba(255,255,255,.6);line-height:1.6}
+footer b{color:rgba(255,255,255,.82);font-weight:700}
+@media (max-height:560px){.crest{width:64px;height:64px;border-radius:16px;margin-bottom:16px}.crest svg{width:40px;height:40px}.redir{margin-top:18px}h1{font-size:clamp(34px,9vw,52px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.bar i{transform:scaleX(1)}}
 </style>
 </head>
 <body>
-<div class="tricolor-bar"></div>
-<div class="wrap">
-<header class="hero">
-<div class="brand"><b></b> DTE · Ministerio de Ciencia, Tecnología, Conocimiento e Innovación</div>
-<h1>Autoreportes <span>TaxonomIA</span></h1>
-<p class="sub">Lecturas automáticas de vigilancia tecnológica: mercado de commodities estratégicos, barrido semanal de evidencia y saturación temática.</p>
-<div class="updated"><span class="dot"></span>Última actualización: 10 de junio de 2026, 19:15 hrs</div>
-</header>
-<nav class="jumps"><a href="#r-commodities">Commodities estratégicos</a><a href="#r-barrido">Barrido semanal de evidencia</a><a href="#r-saturacion">Saturación temática</a></nav>
-<main>
-<section class="report" id="r-commodities"><div class="rhead"><div><div class="rtitle">Commodities estratégicos</div><div class="rsubtitle">Variación de mercado de insumos críticos para tecnologías emergentes</div></div><span class="badge heartbeat">Sin novedades</span></div><div class="rmeta"><span>Período: Verificado: 10-06-2026 23:15 · snapshot: 2026-06-04T13:08:55Z</span><span>Generado: 10 de junio de 2026, 19:15 hrs</span></div><div class="interp"><div class="lbl">Lectura interpretativa</div><p>El nuevo snapshot replica exactamente los valores del estado previo, confirmando la estabilidad de todos los indicadores estratégicos monitoreados tras el quiebre de tendencia registrado el 4 de junio de 2026. Se mantiene el precio del cobre en 6,52 USD/lb, el Brent en 98,29 USD/barril y el tipo de cambio en 894,29 CLP/USD, sin variaciones que alteren el escenario de costos energéticos reducidos y presiones inflacionarias internas persistentes. Esta continuidad sugiere que la mejora en los márgenes mineros y la reducción en costos de transporte se consolidan como línea base, sin cambios inmediatos que modifiquen las proyecciones de inversión. Se recomienda mantener las actualizaciones de planificación estratégica basadas en estos valores, a la espera de una próxima corrida que pueda indicar un nuevo quiebre en la tendencia.</p></div><div class="block"><div class="bhead">Precios y variación desde el último reporte</div><table><thead><tr><th>Insumo</th><th>Valor</th><th>Δ</th></tr></thead><tbody><tr><td>Cobre</td><td>6.52 USD/lb</td><td>—</td></tr><tr><td>Tipo de cambio nominal (dólar observado $CLP/USD)\ tipo de cambio \ precio \ diario \ BCCh</td><td>894.29 CLP/USD</td><td>—</td></tr><tr><td>Henry Hub Natural Gas Spot Price (Dollars per Million Btu)</td><td>3.07 USD/MMBtu</td><td>—</td></tr><tr><td>IPC General, 2023 = 100, Variación Mensual</td><td>1.30 %</td><td>—</td></tr><tr><td>Europe Brent Spot Price FOB (Dollars per Barrel)</td><td>98.29 USD/bbl</td><td>—</td></tr><tr><td>Cushing, OK WTI Spot Price FOB (Dollars per Barrel)</td><td>95.96 USD/bbl</td><td>—</td></tr><tr><td>Tierras raras</td><td>98.57 USD</td><td>—</td></tr><tr><td>Unidad de fomento (UF)</td><td>40,678.43 CLP</td><td>—</td></tr><tr><td>Unidad tributaria mensual (UTM)</td><td>71,506.00 CLP</td><td>—</td></tr></tbody></table></div></section><section class="report" id="r-barrido"><div class="rhead"><div><div class="rtitle">Barrido semanal de evidencia</div><div class="rsubtitle">Nuevos papers, patentes e instrumentos de fomento sobre los temas en seguimiento</div></div><span class="badge ok">Actualizado</span></div><div class="rmeta"><span>Período: Semana del 26 de mayo al 1 de junio de 2026</span><span>Generado: 02 de junio de 2026, 04:15 hrs</span></div><div class="interp"><div class="lbl">Lectura interpretativa</div><p>Aumenta la producción en materiales magnéticos y procesamiento de señales aplicado a sensado remoto; aparece un instrumento CORFO atingente a economía circular de minerales. La continuidad respecto de la semana anterior es estable, sin quiebres de tendencia.</p></div><div class="block"><div class="bhead">Volumen capturado por fuente</div><table><thead><tr><th>Fuente</th><th>Nuevos registros</th><th>Atingentes</th></tr></thead><tbody><tr><td>arXiv / repositorios de preprints</td><td>1.284</td><td>37</td></tr><tr><td>Patentes (Lens / EPO OPS)</td><td>412</td><td>9</td></tr><tr><td>CORFO / ANID (fomento)</td><td>23</td><td>3</td></tr></tbody></table></div><div class="block"><div class="bhead">Temas con mayor movimiento</div><ul class="items"><li>Materiales magnéticos y orbitales 6f para imanes permanentes sin tierras raras pesadas.</li><li>Procesamiento de señales para monitoreo geofísico de relaves.</li><li>Hidrometalurgia de bajo impacto para recuperación de cobre.</li></ul></div></section><section class="report" id="r-saturacion"><div class="rhead"><div><div class="rtitle">Saturación temática</div><div class="rsubtitle">Temas cuya evidencia acumulada alcanza el umbral para un reporte completo</div></div><span class="badge heartbeat">Sin novedades</span></div><div class="rmeta"><span>Período: Al 1 de junio de 2026</span><span>Generado: 02 de junio de 2026, 04:15 hrs</span></div><div class="interp"><div class="lbl">Lectura interpretativa</div><p>Ningún tema en seguimiento alcanzó el umbral de saturación esta semana. El tema &quot;materiales cuántico-magnéticos&quot; avanza y se proyecta saturación en las próximas corridas.</p></div><div class="block"><div class="bhead">Avance hacia saturación</div><table><thead><tr><th>Tema</th><th>Evidencia acumulada</th><th>Umbral</th></tr></thead><tbody><tr><td>Materiales cuántico-magnéticos</td><td>78%</td><td>100%</td></tr><tr><td>Economía circular de minerales</td><td>54%</td><td>100%</td></tr><tr><td>Sensado remoto de relaves</td><td>41%</td><td>100%</td></tr></tbody></table></div></section>
+<div class="tri"></div>
+<div class="aura"></div>
+<main class="card">
+  <div class="crest"><img src="https://taxonomia-dte.onrender.com/static/logos/DTE.png" alt="DTE"></div>
+  <div class="eyebrow">Boletín · División de Tecnologías Emergentes · MinCiencia</div>
+  <h1>Taxonom<b>IA</b></h1>
+  <p class="tagline">Lecturas automáticas de vigilancia tecnológica: commodities estratégicos, barrido semanal de evidencia y saturación temática.</p>
+  <a class="cta" href="https://taxonomia-dte.onrender.com/boletin">Ver el boletín <span class="arr">&rarr;</span></a>
+  <div class="redir">
+    <div class="bar" aria-hidden="true"><i></i></div>
+    <small>Redirigiendo a <a href="https://taxonomia-dte.onrender.com/boletin">taxonomia-dte.onrender.com/boletin</a></small>
+  </div>
 </main>
-<footer>
-<div>División de Tecnologías Emergentes · Morandé 226, Piso 8 · Santiago de Chile</div>
-<div style="margin-top:6px">TaxonomIA — Horizon scanning y prospectiva tecnológica · <a href="../">Plataforma →</a></div>
-</footer>
-</div>
-
+<footer><b>TaxonomIA</b> · División de Tecnologías Emergentes · Ministerio de Ciencia, Tecnología, Conocimiento e Innovación · Gobierno de Chile</footer>
+<script>
+  (function(){
+    var URL="https://taxonomia-dte.onrender.com/boletin";
+    var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+    setTimeout(function(){ location.replace(URL); }, reduce?200:4000);
+  })();
+</script>
 </body>
 </html>
