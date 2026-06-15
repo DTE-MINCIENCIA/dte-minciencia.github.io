@@ -1,0 +1,155 @@
+{
+  "updated": "2026-06-15T12:15:07.673399+00:00",
+  "reports": [
+    {
+      "id": "commodities",
+      "title": "Commodities estratégicos",
+      "subtitle": "Variación de mercado de insumos críticos para tecnologías emergentes",
+      "period": "Verificado: 15-06-2026 08:15 · snapshot: 2026-06-12T12:54:22Z",
+      "status": "heartbeat",
+      "interpretation": "El nuevo snapshot del 12 de junio de 2026 confirma la tendencia a la baja del cobre (6,38 USD/lb) y del tipo de cambio (909,02 CLP/USD), mientras el Brent desciende levemente a 97,46 USD/barril y las tierras raras repuntan a 92,96 USD, rompiendo la caída previa. El IPC se mantiene en 0,20%, y la UF sube a 40.771,41 CLP, lo que sugiere que las presiones inflacionarias internas se estabilizan, pero el alza de tierras raras advierte sobre un posible encarecimiento de insumos críticos. Se recomienda ajustar las proyecciones de inversión minera considerando la compresión de márgenes por el menor precio del cobre, pero aprovechando la baja del tipo de cambio y del Brent para reducir costos operativos.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Precios y variación desde el último reporte",
+          "columns": [
+            "Insumo",
+            "Valor",
+            "Δ"
+          ],
+          "rows": [
+            [
+              "Cobre",
+              "6.38 USD/lb",
+              "-0.8%"
+            ],
+            [
+              "Tipo de cambio nominal (dólar observado $CLP/USD)\\ tipo de cambio \\ precio \\ diario \\ BCCh",
+              "909.02 CLP/USD",
+              "-1.1%"
+            ],
+            [
+              "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)",
+              "3.10 USD/MMBtu",
+              "+1.0%"
+            ],
+            [
+              "IPC General, 2023 = 100, Variación Mensual",
+              "0.20 %",
+              "+0.0%"
+            ],
+            [
+              "Europe Brent Spot Price FOB (Dollars per Barrel)",
+              "97.46 USD/bbl",
+              "-0.8%"
+            ],
+            [
+              "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)",
+              "95.00 USD/bbl",
+              "-1.0%"
+            ],
+            [
+              "Tierras raras",
+              "92.96 USD",
+              "+6.3%"
+            ],
+            [
+              "Unidad de fomento (UF)",
+              "40,771.41 CLP",
+              "+0.0%"
+            ],
+            [
+              "Unidad tributaria mensual (UTM)",
+              "71,506.00 CLP",
+              "+0.0%"
+            ]
+          ]
+        }
+      ],
+      "updated": "2026-06-15T12:15:07.174142+00:00"
+    },
+    {
+      "id": "barrido",
+      "title": "Barrido semanal de evidencia",
+      "subtitle": "Nuevos papers, patentes e instrumentos de fomento sobre los temas en seguimiento",
+      "period": "Semana del 26 de mayo al 1 de junio de 2026",
+      "status": "ok",
+      "interpretation": "Aumenta la producción en materiales magnéticos y procesamiento de señales aplicado a sensado remoto; aparece un instrumento CORFO atingente a economía circular de minerales. La continuidad respecto de la semana anterior es estable, sin quiebres de tendencia.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Volumen capturado por fuente",
+          "columns": [
+            "Fuente",
+            "Nuevos registros",
+            "Atingentes"
+          ],
+          "rows": [
+            [
+              "arXiv / repositorios de preprints",
+              "1.284",
+              "37"
+            ],
+            [
+              "Patentes (Lens / EPO OPS)",
+              "412",
+              "9"
+            ],
+            [
+              "CORFO / ANID (fomento)",
+              "23",
+              "3"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Temas con mayor movimiento",
+          "items": [
+            "Materiales magnéticos y orbitales 6f para imanes permanentes sin tierras raras pesadas.",
+            "Procesamiento de señales para monitoreo geofísico de relaves.",
+            "Hidrometalurgia de bajo impacto para recuperación de cobre."
+          ]
+        }
+      ],
+      "updated": "2026-06-02T08:15:00+00:00"
+    },
+    {
+      "id": "saturacion",
+      "title": "Saturación temática",
+      "subtitle": "Temas cuya evidencia acumulada alcanza el umbral para un reporte completo",
+      "period": "Al 1 de junio de 2026",
+      "status": "heartbeat",
+      "interpretation": "Ningún tema en seguimiento alcanzó el umbral de saturación esta semana. El tema \"materiales cuántico-magnéticos\" avanza y se proyecta saturación en las próximas corridas.",
+      "blocks": [
+        {
+          "type": "table",
+          "heading": "Avance hacia saturación",
+          "columns": [
+            "Tema",
+            "Evidencia acumulada",
+            "Umbral"
+          ],
+          "rows": [
+            [
+              "Materiales cuántico-magnéticos",
+              "78%",
+              "100%"
+            ],
+            [
+              "Economía circular de minerales",
+              "54%",
+              "100%"
+            ],
+            [
+              "Sensado remoto de relaves",
+              "41%",
+              "100%"
+            ]
+          ]
+        }
+      ],
+      "updated": "2026-06-02T08:15:00+00:00"
+    }
+  ]
+}
