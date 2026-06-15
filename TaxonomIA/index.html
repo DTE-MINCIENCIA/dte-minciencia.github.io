@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://taxonomia-dte.onrender.com/">
 <!-- Túnel: la URL pública (github.io) dirige a la plataforma alojada en Render. -->
 <meta http-equiv="refresh" content="4;url=https://taxonomia-dte.onrender.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23282BA5'/%3E%3Crect x='5' y='24' width='7.3' height='3' fill='%232E86C1'/%3E%3Crect x='12.3' y='24' width='7.4' height='3' fill='%23fff'/%3E%3Crect x='19.7' y='24' width='7.3' height='3' fill='%23D42020'/%3E%3Ctext x='16' y='18.5' font-family='Segoe UI,Arial,sans-serif' font-size='10.5' font-weight='800' fill='%23fff' text-anchor='middle' letter-spacing='0.5'%3EDTE%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="DTE.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@ body{font-family:var(--font);color:#fff;-webkit-font-smoothing:antialiased;
 .crest{display:inline-flex;align-items:center;justify-content:center;width:88px;height:88px;border-radius:22px;
   background:linear-gradient(150deg,#fff,#eef0ff);box-shadow:0 22px 60px rgba(8,10,60,.5),inset 0 0 0 1px rgba(255,255,255,.6);
   margin:0 auto 26px;position:relative}
-.crest svg{width:54px;height:54px}
+.crest img{width:54px;height:54px;object-fit:contain;display:block}
 .crest::after{content:"";position:absolute;left:18px;right:18px;bottom:13px;height:3px;border-radius:2px;
   background:linear-gradient(90deg,var(--tri-blue) 0 33.33%,#cfd3ef 33.33% 66.66%,var(--tri-red) 66.66% 100%)}
 .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
@@ -71,9 +71,7 @@ footer b{color:rgba(255,255,255,.82);font-weight:700}
 <div class="tri"></div>
 <div class="aura"></div>
 <main class="card">
-  <div class="crest" aria-hidden="true">
-    <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#282BA5"/><text x="16" y="20" font-family="Montserrat,Segoe UI,Arial,sans-serif" font-size="12.5" font-weight="900" fill="#fff" text-anchor="middle" letter-spacing="0.5">DTE</text></svg>
-  </div>
+  <div class="crest"><img src="DTE.png" alt="DTE"></div>
   <div class="eyebrow">División de Tecnologías Emergentes · MinCiencia</div>
   <h1>Taxonom<b>IA</b></h1>
   <p class="tagline">Vigilancia y prospectiva tecnológica para la toma de decisiones del Estado de Chile.</p>
